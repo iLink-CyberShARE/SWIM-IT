@@ -1,4 +1,4 @@
-# Sciab Model Processor
+# Scilab Model Processor
 
 ## Description
 The Scilab model Processor is a Restful web service packaged with dropwizard that enables model execution of in Scilab through their Java API. 
