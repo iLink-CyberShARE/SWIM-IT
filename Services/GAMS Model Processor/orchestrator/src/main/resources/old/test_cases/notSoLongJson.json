@@ -1,0 +1,573 @@
+{
+  "scenarioName": "usual",
+  "scenarioLabel": "Business as usual",
+  "scenarioDescription": "Business as usual scenario",
+  "dateCreated": "2016-10-24T06:16:09-07:00",
+  "dateModified": "2017-04-20T15:06:00-07:00",
+  "modelSettings": [{
+    "modelID": "003",
+    "solver": "NLP",
+    "objective": "DNPV_ben_phist_wbase_v"
+  }],
+  "modelInputs": [{
+      "modelID": "003",
+      "paramName": "sw_sustain_p",
+      "paramLabel": "Ending Proportion of Starting Surface Water Storage",
+      "paramDescription": "Ending Proportion of Starting Surface Water Storage",
+      "paramUnit": "prop",
+      "paramDefaultValue": 0.25,
+      "paramDefaultSource": "",
+      "maxValue": 1,
+      "minValue": 0,
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": 0.25
+    },
+    {
+      "modelID": "003",
+      "paramName": "Burb_back_aqf_rch_p",
+      "paramLabel": "Proportion of urban water from backstop technology recharging aquifer",
+      "paramDescription": "Proportion of urban water from backstop technology recharging aquifer",
+      "paramUnit": "prop",
+      "paramDefaultValue": [{
+          "miuse": "LCMI_u_f",
+          "value": 0.5
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0.5
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": -1,
+      "minValue": 1,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [{
+          "miuse": "LCMI_u_f",
+          "value": 0.5
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "Price_p",
+      "paramLabel": "Observed Crop Prices",
+      "paramDescription": "Observed Crop Prices",
+      "paramUnit": "USD/ton",
+      "paramDefaultValue": [{
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "value": 160
+        }
+      ],
+      "paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-128",
+      "maxValue": 10000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [{
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "value": 160
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "Cost_p",
+      "paramLabel": "Crop Production Costs",
+      "paramDescription": "Crop production costs per acre",
+      "paramUnit": "USD/ac",
+      "paramDefaultValue": [{
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        }
+      ],
+      "paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-130",
+      "maxValue": 10000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "3",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [{
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        }
+      ]
+    }
+  ],
+  "modelOutputs": [{
+      "varLabel": "Reservoir Storage Volume",
+      "varName": "Z_v",
+      "varDescription": "Reservoir water storage",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Aquifer Storage Volume",
+      "varName": "Q_v",
+      "varDescription": "Aquifer Water Storage",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Aquifer Depth",
+      "varName": "Aquifer_depth_v",
+      "varDescription": "Aquifer Depth",
+      "varUnit": "ft/yr"
+    },
+    {
+      "varLabel": "Reservoir Surface Evaporation",
+      "varName": "Evaporation_v",
+      "varDescription": "Reservoir surface evaporation by year",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Reservoir Surface Precipation",
+      "varName": "Precip_v",
+      "varDescription": "Reservoir surface precipation by year",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Reservoir Surface Area",
+      "varName": "Precip_v",
+      "varDescription": "Reservoir surface area by year",
+      "varUnit": "1000 ac/yr"
+    },
+    {
+      "varLabel": "Surface Irrigated Land in Production",
+      "varName": "SWacres_v",
+      "varDescription": "Surface irrigated land in production",
+      "varUnit": "1000 ac/yr"
+    },
+    {
+      "varLabel": "Aquifer Irrigated Land in Production",
+      "varName": "GWAcres_v",
+      "varDescription": "Aquifer irrigated land in production",
+      "varUnit": "1000 ac/yr"
+    },
+    {
+      "varLabel": "Irrigated Land in Production",
+      "varName": "Tacres_v",
+      "varDescription": "Total irrigated land in production summed over suface and aquifer water",
+      "varUnit": "1000 ac/yr"
+    },
+    {
+      "varLabel": "Total Irrigated Land in Production",
+      "varName": "tot_acres_v",
+      "varDescription": "Total irrigated land in production summmed over crops and technologies",
+      "varUnit": "1000 ac/yr"
+    },
+    {
+      "varLabel": "Irrigation Surface Water Use",
+      "varName": "Ag_use_v",
+      "varDescription": "Irrigation Surface Water Use summed over crops and technologies",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Agricultural Pumping",
+      "varName": "ag_pump_v",
+      "varDescription": "Agricultural pumping by crop and technology",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "tot_ag_pump_v",
+      "varName": "Total Agricultural Pumping",
+      "varDescription": "Total agricultural pumping summed over crops and technology",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Ag_pump_aq_rch_v",
+      "varName": "Agricultural Pumping that Contributes to Aquifer Recharge",
+      "varDescription": "Agricultural pumping that contributes to aquifer recharge",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "Aga_returns_v",
+      "varName": "Agricultural Diversions that Contributes to Aquifer Recharge",
+      "varDescription": "Surface return flow from agricultural river diversions that return to the aquifer",
+      "varUnit": "1000 AF/hr"
+    },
+    {
+      "varLabel": "urb_use_v",
+      "varName": "Urban Water Use",
+      "varDescription": "Urban water use (surface diversions + pumping)",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "urb_sw_use_v",
+      "varName": "Urban Water Use from Surface Water",
+      "varDescription": "Urban water use from surface water",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "urb_gw_use_v",
+      "varName": "Urban Water Use from Ground Water",
+      "varDescription": "Urban water use from ground water",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "urb_back_use_v",
+      "varName": "Urban Water Use from Backstop Technology",
+      "varDescription": "Urban water use from backstop technology",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "urb_back_aq_rch_v",
+      "varName": "Urban Water Use from Backstop Technology Recharging Aquifer",
+      "varDescription": "Urban water use from backstop technology recharging the aquifer",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "urb_pump_v",
+      "varName": "Urban Water Pumping",
+      "varDescription": "Urban water pumping from aquifer",
+      "varUnit": "1000 AF/yr"
+    },
+    {
+      "varLabel": "yield_v",
+      "varName": "Crop Yield",
+      "varDescription": "Yield by crop and technology",
+      "varUnit": "tons/ac"
+    },
+    {
+      "varLabel": "X_v",
+      "varName": "Flows",
+      "varDescription": "Flows of all kinds (sanke X_v by river gauge)",
+      "varUnit": "AF/yr"
+    },
+    {
+      "varLabel": "urb_price_v",
+      "varName": "Urban Price",
+      "varDescription": "Urban water price",
+      "varUnit": "USD/AF"
+    },
+    {
+      "varLabel": "urb_con_surp_v",
+      "varName": "Urban Consumer Surplus",
+      "varDescription": "Difference between what customer is willing to pay to what he has to pay",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "urb_use_p_cap_v",
+      "varName": "Urban Use per Household",
+      "varDescription": "Total urban use divided by total customer households",
+      "varUnit": "AF/yr"
+    },
+    {
+      "varLabel": "urb_revenue_v",
+      "varName": "Urban Gross Revenues from Water Sales",
+      "varDescription": "Price per acre feet multiplied by quantity supplied by the urban supplier",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "urb_gross_ben_v",
+      "varName": "Urban Gross Benefits from Water Sales",
+      "varDescription": "Revenue plus consumer surplus",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "urb_costs_v",
+      "varName": "Urban Costs of Water Supply",
+      "varDescription": "Total cost of urban supplied water",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "urb_value_v",
+      "varName": "Urban Net Economic Benefits",
+      "varDescription": "Producer plus consumer surplus (urban gross benefits - cost of supply)",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Urb_value_af_v",
+      "varName": "Urban Economic Benefits",
+      "varDescription": "Urban economic benefits per acre foot",
+      "varUnit": "USD/AF"
+    },
+    {
+      "varLabel": "urb_m_value_v",
+      "varName": "Urban Marginal Benefits",
+      "varDescription": "Marginal net benefit (price - marginal cost)",
+      "varUnit": "USD/AF"
+    },
+    {
+      "varLabel": "Ag_costs_v",
+      "varName": "Agricultural Production Costs",
+      "varDescription": "Agricultural production costs (surface water + ground water) ",
+      "varUnit": "USD/yr"
+    },
+    {
+      "varLabel": "Ag_value_v",
+      "varName": "Agricutural Net Economic Value",
+      "varDescription": "Agricultural net economic value (total profitability)",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Netrev_acre_v",
+      "varName": "Agricultural Net Revenue",
+      "varDescription": "Agricultural net revenue per acre   (profitability divided by land)",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Ag_Ben_v",
+      "varName": "Net Income Over Crops",
+      "varDescription": "Net income over crops by farming region and year",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "T_ag_ben_v",
+      "varName": "Discounted Net Regional Farm Income",
+      "varDescription": "Discounted net present value of regional farm income",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Env_ben_v",
+      "varName": "Environmental Economic Benefits",
+      "varDescription": "Environmental benefits by year (willingness to pay for environmental flows)",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "rec_ben_v",
+      "varName": "Reservoir Recreation Economic Benefits",
+      "varDescription": "Reservoir recreation benefits by year (willingness to pay for recreation values)",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Tot_ag_ben_v",
+      "varName": "Total Agricultural Benefits by Year",
+      "varDescription": "Sum of farm benefits over region",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Tot_urb_ben_v",
+      "varName": "Total Urban Benefits by Year",
+      "varDescription": "Sum of urban benefits over region",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Tot_env_riv_ben_v",
+      "varName": "Total River Environmental Benefits by Year",
+      "varDescription": "Sum of river benefits over region",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Tot_rec_res_ben_v ",
+      "varName": "Total Recreation Reservoir Benefits",
+      "varDescription": "Sum of reservoir recreation benefits over region",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "Tot_ben_v",
+      "varName": "Total Benefits",
+      "varDescription": "Sum of total benefits over region and uses",
+      "varUnit": "1000 USD/ yr"
+    },
+    {
+      "varLabel": "DNPV_ben_v",
+      "varName": "Discounted NPV Over Uses and Years",
+      "varDescription": "Sum of total benefits over region, uses and time periods",
+      "varUnit": "1000 USD"
+    },
+    {
+      "varLabel": "Ag_m_value_v",
+      "varName": "Agricultural Marginal Benefit",
+      "varDescription": "Farm price of water plus scarcity value",
+      "varUnit": "USD/AF"
+    }
+  ],
+  "name": "test case 02",
+  "description": "this is a test case for the april 15 bucket model",
+  "isPublic": "true",
+  "id": "2e87935",
+  "userid": "1",
+  "status": "queued"
+}

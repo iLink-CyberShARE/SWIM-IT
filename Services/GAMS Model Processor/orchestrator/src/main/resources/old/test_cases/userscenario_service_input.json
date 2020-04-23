@@ -1,0 +1,5541 @@
+{
+  "scenarioName": "usual",
+  "scenarioLabel": "Business as usual",
+  "scenarioDescription": "Business as usual scenario",
+  "dateCreated": "2016-10-24T06:16:09-07:00",
+  "dateModified": "2017-04-20T15:06:00-07:00",
+  "modelSettings": [
+    {
+      "modelID": "003",
+      "solver": "NLP",
+      "objective": "DNPV_ben_v_phist_wbase_v"
+    }
+  ],
+  "modelInputs": [
+    {
+      "modelID": "003",
+      "paramName": "Yield_p",
+      "paramLabel": "Observed Crop Yield",
+      "paramDescription": "Amount of a crop that was harvested per unit of land area",
+      "paramUnit": "tons/ac",
+      "paramDefaultValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.58
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 17
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 8
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.58
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 17
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 8
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.58
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 17
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 8
+        }
+      ],
+      "paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-127",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "3",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.58
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 17
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 8
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.58
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 17
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 8
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.58
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 17
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "Price_p",
+      "paramLabel": "Observed Crop Prices",
+      "paramDescription": "Observed Crop Prices",
+      "paramUnit": "USD/ton",
+      "paramDefaultValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "value": 160
+        }
+      ],
+      "paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-128",
+      "maxValue": 10000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "value": 160
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "value": 4560
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "value": 300
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "value": 160
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "lan_p",
+      "paramLabel": "Observed Land in Production",
+      "paramDescription": "Land in production over all observed historical years",
+      "paramUnit": "1000 ac",
+      "paramDefaultValue": [
+        {
+          "t": "1996",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 18.546
+        },
+        {
+          "t": "1996",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1996",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.252
+        },
+        {
+          "t": "1996",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 37.126
+        },
+        {
+          "t": "1996",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1996",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 34.303
+        },
+        {
+          "t": "1996",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.026
+        },
+        {
+          "t": "1996",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1996",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.205
+        },
+        {
+          "t": "1997",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 18.759
+        },
+        {
+          "t": "1997",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1997",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.39
+        },
+        {
+          "t": "1997",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 36.48
+        },
+        {
+          "t": "1997",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1997",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 33.805
+        },
+        {
+          "t": "1997",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 25.512
+        },
+        {
+          "t": "1997",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1997",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.232
+        },
+        {
+          "t": "1998",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 19.68
+        },
+        {
+          "t": "1998",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1998",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.565
+        },
+        {
+          "t": "1998",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 32.851
+        },
+        {
+          "t": "1998",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1998",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 34.006
+        },
+        {
+          "t": "1998",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.839
+        },
+        {
+          "t": "1998",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1998",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 9.947
+        },
+        {
+          "t": "1999",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.172
+        },
+        {
+          "t": "1999",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1999",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.913
+        },
+        {
+          "t": "1999",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 29.464
+        },
+        {
+          "t": "1999",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1999",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 30.033
+        },
+        {
+          "t": "1999",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 27.209
+        },
+        {
+          "t": "1999",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1999",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.167
+        },
+        {
+          "t": "2000",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.324
+        },
+        {
+          "t": "2000",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2000",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.673
+        },
+        {
+          "t": "2000",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 31.665
+        },
+        {
+          "t": "2000",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2000",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 27.712
+        },
+        {
+          "t": "2000",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.126
+        },
+        {
+          "t": "2000",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2000",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.239
+        },
+        {
+          "t": "2001",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.446
+        },
+        {
+          "t": "2001",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2001",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.484
+        },
+        {
+          "t": "2001",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 27.097
+        },
+        {
+          "t": "2001",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2001",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 27.362
+        },
+        {
+          "t": "2001",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.722
+        },
+        {
+          "t": "2001",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2001",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.439
+        },
+        {
+          "t": "2002",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.86
+        },
+        {
+          "t": "2002",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.668
+        },
+        {
+          "t": "2002",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.262
+        },
+        {
+          "t": "2002",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.365
+        },
+        {
+          "t": "2002",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.668
+        },
+        {
+          "t": "2002",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 25.68
+        },
+        {
+          "t": "2002",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.692
+        },
+        {
+          "t": "2002",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.668
+        },
+        {
+          "t": "2002",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 13.076
+        },
+        {
+          "t": "2003",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 19.494
+        },
+        {
+          "t": "2003",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.988
+        },
+        {
+          "t": "2003",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.466
+        },
+        {
+          "t": "2003",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.278
+        },
+        {
+          "t": "2003",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.988
+        },
+        {
+          "t": "2003",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 21.526
+        },
+        {
+          "t": "2003",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.698
+        },
+        {
+          "t": "2003",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.988
+        },
+        {
+          "t": "2003",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.119
+        },
+        {
+          "t": "2004",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.19
+        },
+        {
+          "t": "2004",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.701
+        },
+        {
+          "t": "2004",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.893
+        },
+        {
+          "t": "2004",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.299
+        },
+        {
+          "t": "2004",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.701
+        },
+        {
+          "t": "2004",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 22.323
+        },
+        {
+          "t": "2004",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.821
+        },
+        {
+          "t": "2004",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.701
+        },
+        {
+          "t": "2004",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.837
+        },
+        {
+          "t": "2005",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.886
+        },
+        {
+          "t": "2005",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.111
+        },
+        {
+          "t": "2005",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.089
+        },
+        {
+          "t": "2005",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 27.35
+        },
+        {
+          "t": "2005",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.111
+        },
+        {
+          "t": "2005",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 23.871
+        },
+        {
+          "t": "2005",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.511
+        },
+        {
+          "t": "2005",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.111
+        },
+        {
+          "t": "2005",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.239
+        },
+        {
+          "t": "2006",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.263
+        },
+        {
+          "t": "2006",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.186
+        },
+        {
+          "t": "2006",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.829
+        },
+        {
+          "t": "2006",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.112
+        },
+        {
+          "t": "2006",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.186
+        },
+        {
+          "t": "2006",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 21.783
+        },
+        {
+          "t": "2006",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 19.627
+        },
+        {
+          "t": "2006",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.186
+        },
+        {
+          "t": "2006",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.49
+        },
+        {
+          "t": "2007",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.624
+        },
+        {
+          "t": "2007",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.101
+        },
+        {
+          "t": "2007",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.039
+        },
+        {
+          "t": "2007",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.85
+        },
+        {
+          "t": "2007",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.101
+        },
+        {
+          "t": "2007",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.088
+        },
+        {
+          "t": "2007",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.32
+        },
+        {
+          "t": "2007",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.101
+        },
+        {
+          "t": "2007",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.383
+        },
+        {
+          "t": "2008",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.293
+        },
+        {
+          "t": "2008",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 10.129
+        },
+        {
+          "t": "2008",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.249
+        },
+        {
+          "t": "2008",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.162
+        },
+        {
+          "t": "2008",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 10.129
+        },
+        {
+          "t": "2008",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 16.422
+        },
+        {
+          "t": "2008",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.933
+        },
+        {
+          "t": "2008",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 10.129
+        },
+        {
+          "t": "2008",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.485
+        },
+        {
+          "t": "2009",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.06
+        },
+        {
+          "t": "2009",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2009",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.611
+        },
+        {
+          "t": "2009",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 17.677
+        },
+        {
+          "t": "2009",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2009",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 29.361
+        },
+        {
+          "t": "2009",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.769
+        },
+        {
+          "t": "2009",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2009",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 6.215
+        },
+        {
+          "t": "2010",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.847
+        },
+        {
+          "t": "2010",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.62
+        },
+        {
+          "t": "2010",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.213
+        },
+        {
+          "t": "2010",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 17.629
+        },
+        {
+          "t": "2010",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.62
+        },
+        {
+          "t": "2010",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 20.256
+        },
+        {
+          "t": "2010",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.435
+        },
+        {
+          "t": "2010",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.62
+        },
+        {
+          "t": "2010",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.591
+        },
+        {
+          "t": "2011",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.763
+        },
+        {
+          "t": "2011",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.876
+        },
+        {
+          "t": "2011",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 12.281
+        },
+        {
+          "t": "2011",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 9.692
+        },
+        {
+          "t": "2011",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.876
+        },
+        {
+          "t": "2011",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 28.37
+        },
+        {
+          "t": "2011",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 9.638
+        },
+        {
+          "t": "2011",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.876
+        },
+        {
+          "t": "2011",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 6.555
+        },
+        {
+          "t": "2012",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.567
+        },
+        {
+          "t": "2012",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.542
+        },
+        {
+          "t": "2012",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 13.477
+        },
+        {
+          "t": "2012",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 11.231
+        },
+        {
+          "t": "2012",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.542
+        },
+        {
+          "t": "2012",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 26.096
+        },
+        {
+          "t": "2012",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 14.91
+        },
+        {
+          "t": "2012",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.542
+        },
+        {
+          "t": "2012",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 6.11
+        },
+        {
+          "t": "2013",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.393
+        },
+        {
+          "t": "2013",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2013",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.108
+        },
+        {
+          "t": "2013",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.623
+        },
+        {
+          "t": "2013",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2013",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.572
+        },
+        {
+          "t": "2013",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 9.411
+        },
+        {
+          "t": "2013",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2013",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.583
+        },
+        {
+          "t": "2014",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 31.293
+        },
+        {
+          "t": "2014",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2014",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.108
+        },
+        {
+          "t": "2014",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.656
+        },
+        {
+          "t": "2014",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2014",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.572
+        },
+        {
+          "t": "2014",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.668
+        },
+        {
+          "t": "2014",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2014",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.583
+        },
+        {
+          "t": "2015",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 31.391
+        },
+        {
+          "t": "2015",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2015",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.108
+        },
+        {
+          "t": "2015",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 25.503
+        },
+        {
+          "t": "2015",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2015",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.572
+        },
+        {
+          "t": "2015",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.493
+        },
+        {
+          "t": "2015",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2015",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.583
+        }
+      ],
+      "paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-129",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "4",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "t": "1996",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 18.546
+        },
+        {
+          "t": "1996",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1996",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.252
+        },
+        {
+          "t": "1996",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 37.126
+        },
+        {
+          "t": "1996",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1996",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 34.303
+        },
+        {
+          "t": "1996",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.026
+        },
+        {
+          "t": "1996",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1996",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.205
+        },
+        {
+          "t": "1997",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 18.759
+        },
+        {
+          "t": "1997",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1997",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.39
+        },
+        {
+          "t": "1997",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 36.48
+        },
+        {
+          "t": "1997",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1997",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 33.805
+        },
+        {
+          "t": "1997",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 25.512
+        },
+        {
+          "t": "1997",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1997",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.232
+        },
+        {
+          "t": "1998",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 19.68
+        },
+        {
+          "t": "1998",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1998",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.565
+        },
+        {
+          "t": "1998",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 32.851
+        },
+        {
+          "t": "1998",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1998",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 34.006
+        },
+        {
+          "t": "1998",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.839
+        },
+        {
+          "t": "1998",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1998",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 9.947
+        },
+        {
+          "t": "1999",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.172
+        },
+        {
+          "t": "1999",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1999",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.913
+        },
+        {
+          "t": "1999",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 29.464
+        },
+        {
+          "t": "1999",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1999",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 30.033
+        },
+        {
+          "t": "1999",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 27.209
+        },
+        {
+          "t": "1999",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "1999",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 8.167
+        },
+        {
+          "t": "2000",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.324
+        },
+        {
+          "t": "2000",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2000",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.673
+        },
+        {
+          "t": "2000",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 31.665
+        },
+        {
+          "t": "2000",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2000",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 27.712
+        },
+        {
+          "t": "2000",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.126
+        },
+        {
+          "t": "2000",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2000",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.239
+        },
+        {
+          "t": "2001",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.446
+        },
+        {
+          "t": "2001",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2001",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.484
+        },
+        {
+          "t": "2001",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 27.097
+        },
+        {
+          "t": "2001",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2001",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 27.362
+        },
+        {
+          "t": "2001",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.722
+        },
+        {
+          "t": "2001",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.628
+        },
+        {
+          "t": "2001",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.439
+        },
+        {
+          "t": "2002",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.86
+        },
+        {
+          "t": "2002",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.668
+        },
+        {
+          "t": "2002",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.262
+        },
+        {
+          "t": "2002",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.365
+        },
+        {
+          "t": "2002",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.668
+        },
+        {
+          "t": "2002",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 25.68
+        },
+        {
+          "t": "2002",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 26.692
+        },
+        {
+          "t": "2002",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.668
+        },
+        {
+          "t": "2002",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 13.076
+        },
+        {
+          "t": "2003",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 19.494
+        },
+        {
+          "t": "2003",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.988
+        },
+        {
+          "t": "2003",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.466
+        },
+        {
+          "t": "2003",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.278
+        },
+        {
+          "t": "2003",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.988
+        },
+        {
+          "t": "2003",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 21.526
+        },
+        {
+          "t": "2003",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.698
+        },
+        {
+          "t": "2003",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.988
+        },
+        {
+          "t": "2003",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.119
+        },
+        {
+          "t": "2004",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.19
+        },
+        {
+          "t": "2004",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.701
+        },
+        {
+          "t": "2004",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.893
+        },
+        {
+          "t": "2004",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.299
+        },
+        {
+          "t": "2004",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.701
+        },
+        {
+          "t": "2004",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 22.323
+        },
+        {
+          "t": "2004",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.821
+        },
+        {
+          "t": "2004",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.701
+        },
+        {
+          "t": "2004",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.837
+        },
+        {
+          "t": "2005",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.886
+        },
+        {
+          "t": "2005",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.111
+        },
+        {
+          "t": "2005",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.089
+        },
+        {
+          "t": "2005",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 27.35
+        },
+        {
+          "t": "2005",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.111
+        },
+        {
+          "t": "2005",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 23.871
+        },
+        {
+          "t": "2005",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.511
+        },
+        {
+          "t": "2005",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.111
+        },
+        {
+          "t": "2005",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.239
+        },
+        {
+          "t": "2006",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.263
+        },
+        {
+          "t": "2006",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.186
+        },
+        {
+          "t": "2006",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.829
+        },
+        {
+          "t": "2006",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.112
+        },
+        {
+          "t": "2006",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.186
+        },
+        {
+          "t": "2006",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 21.783
+        },
+        {
+          "t": "2006",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 19.627
+        },
+        {
+          "t": "2006",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.186
+        },
+        {
+          "t": "2006",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.49
+        },
+        {
+          "t": "2007",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.624
+        },
+        {
+          "t": "2007",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.101
+        },
+        {
+          "t": "2007",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.039
+        },
+        {
+          "t": "2007",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 22.85
+        },
+        {
+          "t": "2007",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.101
+        },
+        {
+          "t": "2007",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.088
+        },
+        {
+          "t": "2007",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.32
+        },
+        {
+          "t": "2007",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 9.101
+        },
+        {
+          "t": "2007",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.383
+        },
+        {
+          "t": "2008",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.293
+        },
+        {
+          "t": "2008",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 10.129
+        },
+        {
+          "t": "2008",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.249
+        },
+        {
+          "t": "2008",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.162
+        },
+        {
+          "t": "2008",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 10.129
+        },
+        {
+          "t": "2008",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 16.422
+        },
+        {
+          "t": "2008",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 23.933
+        },
+        {
+          "t": "2008",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 10.129
+        },
+        {
+          "t": "2008",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.485
+        },
+        {
+          "t": "2009",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.06
+        },
+        {
+          "t": "2009",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2009",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.611
+        },
+        {
+          "t": "2009",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 17.677
+        },
+        {
+          "t": "2009",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2009",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 29.361
+        },
+        {
+          "t": "2009",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.769
+        },
+        {
+          "t": "2009",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2009",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 6.215
+        },
+        {
+          "t": "2010",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.847
+        },
+        {
+          "t": "2010",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.62
+        },
+        {
+          "t": "2010",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 11.213
+        },
+        {
+          "t": "2010",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 17.629
+        },
+        {
+          "t": "2010",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.62
+        },
+        {
+          "t": "2010",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 20.256
+        },
+        {
+          "t": "2010",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.435
+        },
+        {
+          "t": "2010",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.62
+        },
+        {
+          "t": "2010",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 5.591
+        },
+        {
+          "t": "2011",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.763
+        },
+        {
+          "t": "2011",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.876
+        },
+        {
+          "t": "2011",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 12.281
+        },
+        {
+          "t": "2011",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 9.692
+        },
+        {
+          "t": "2011",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.876
+        },
+        {
+          "t": "2011",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 28.37
+        },
+        {
+          "t": "2011",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 9.638
+        },
+        {
+          "t": "2011",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.876
+        },
+        {
+          "t": "2011",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 6.555
+        },
+        {
+          "t": "2012",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 20.567
+        },
+        {
+          "t": "2012",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.542
+        },
+        {
+          "t": "2012",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 13.477
+        },
+        {
+          "t": "2012",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 11.231
+        },
+        {
+          "t": "2012",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.542
+        },
+        {
+          "t": "2012",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 26.096
+        },
+        {
+          "t": "2012",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 14.91
+        },
+        {
+          "t": "2012",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.542
+        },
+        {
+          "t": "2012",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 6.11
+        },
+        {
+          "t": "2013",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 21.393
+        },
+        {
+          "t": "2013",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2013",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.108
+        },
+        {
+          "t": "2013",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.623
+        },
+        {
+          "t": "2013",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2013",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.572
+        },
+        {
+          "t": "2013",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 9.411
+        },
+        {
+          "t": "2013",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 8.056
+        },
+        {
+          "t": "2013",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.583
+        },
+        {
+          "t": "2014",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 31.293
+        },
+        {
+          "t": "2014",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2014",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.108
+        },
+        {
+          "t": "2014",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 24.656
+        },
+        {
+          "t": "2014",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2014",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.572
+        },
+        {
+          "t": "2014",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.668
+        },
+        {
+          "t": "2014",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2014",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.583
+        },
+        {
+          "t": "2015",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 31.391
+        },
+        {
+          "t": "2015",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2015",
+          "j": "pecans",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 10.108
+        },
+        {
+          "t": "2015",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 25.503
+        },
+        {
+          "t": "2015",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2015",
+          "j": "veges",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 19.572
+        },
+        {
+          "t": "2015",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EBID_u_f",
+          "value": 16.493
+        },
+        {
+          "t": "2015",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "MXID_u_f",
+          "value": 7.877
+        },
+        {
+          "t": "2015",
+          "j": "forage",
+          "k": "flood",
+          "aguse": "EPID_u_f",
+          "value": 4.583
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "Cost_p",
+      "paramLabel": "Crop Production Costs",
+      "paramDescription": "Crop production costs per acre",
+      "paramUnit": "USD/ac",
+      "paramDefaultValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        }
+      ],
+      "paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-130",
+      "maxValue": 10000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "3",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 1700
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 4200
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 820
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "ag_gw_pump_capacity_p",
+      "paramLabel": "Agricultural Pumping Capacity",
+      "paramDescription": "Agricultural pumping capacity in acre-feet per year by aquifer",
+      "paramUnit": "AF/yr",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 40
+        },
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 12
+        },
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "mxid_u_f",
+          "value": 0
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 60
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "mxid_u_f",
+          "value": 75
+        }
+      ],
+      "paramDefaultSource": "Educated Guess",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 40
+        },
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 12
+        },
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "mxid_u_f",
+          "value": 0
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 60
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "mxid_u_f",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "ag_av_gw_cost_p",
+      "paramLabel": "Agricultural Average Costs of Pumping Ground Water",
+      "paramDescription": "Average irrigation costs of pumping ground water",
+      "paramUnit": "USD/AF",
+      "paramDefaultValue": [
+        {
+          "aguse": "EBID_u_f",
+          "value": 90
+        },
+        {
+          "aguse": "EPID_u_f",
+          "value": 90
+        }
+      ],
+      "paramDefaultSource": "Elephant Butte Irrigation District consultant Phil King, NMSU March 2013",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "aguse": "EBID_u_f",
+          "value": 90
+        },
+        {
+          "aguse": "EPID_u_f",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "pop0_p",
+      "paramLabel": "Initial Number of Urban Water Buying Households",
+      "paramDescription": "Initial Number of Urban Water Buying Households",
+      "paramUnit": "1000",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 32.303
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 194.212
+        }
+      ],
+      "paramDefaultSource": "http://www.epwu.org/water/water_resources.html, http://www.epwu.org/water/water_stats.html",
+      "maxValue": 500,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 32.303
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 194.212
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "rho_pop_p",
+      "paramLabel": "Urban Water Buying Households Growth Rate",
+      "paramUnit": "prop/yr",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0.019
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0.0101
+        }
+      ],
+      "paramDefaultSource": "US Census el paso county data: population 2010 v 2014 1.0101 pct growth per year: http://quickfacts.census.gov/qfd/states/48/48141.html 833,487(2014) and 800,647 (2010)",
+      "maxValue": 0.04,
+      "minValue": -0.02,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0.019
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0.0101
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "elast_p",
+      "paramLabel": "Water Price Elastacity of Demand",
+      "paramDescription": "A measure of the relationship between a change in the quantity of water demanded and a change in its price",
+      "paramUnit": "n/a",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": -0.32
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": -0.32
+        }
+      ],
+      "paramDefaultSource": "El Paso water study (fullerton): http://www.waterrf.org/resources/Lists/ProjectPapers/Attachments/61/4501_ProjectPaper.pdf",
+      "maxValue": 1,
+      "minValue": -1,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": -0.32
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": -0.32
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_price_p",
+      "paramLabel": "Observed Historical Urban Price of Water",
+      "paramDescription": "Observed Historical Urban Price of Water",
+      "paramUnit": "1000 USD/1000 AF",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 851.14
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 851.14
+        }
+      ],
+      "paramDefaultSource": "El paso water utilities pricing source Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+      "maxValue": 2000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 851.14
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 851.14
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "SW_Treat_capac_p",
+      "paramLabel": "Urban Surface Water Treatment Capacity",
+      "paramDescription": "Urban Surface water treatment capacity by city",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 60
+        }
+      ],
+      "paramDefaultSource": "http://www.epwu.org/water/hueco_bolson/2.0ElPasoWaterSupply.pdf",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_use_p",
+      "paramLabel": "Observed Historical Urban Water Deliveries",
+      "paramDescription": "Observed Historical Urban Water Deliveries",
+      "paramUnit": "1000 AF/yr",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 19.71
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 118.5
+        }
+      ],
+      "paramDefaultSource": "El Paso water production Dec 28 2015: http://www.epwu.org/water/water_resources.html",
+      "maxValue": 300,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 19.71
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 118.5
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_Av_cost0_p",
+      "paramLabel": "Urban Cost of Supply",
+      "paramDescription": "Urban cost of supply per unit delivered to the home",
+      "paramUnit": "USD/AF",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 851.14
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 851.14
+        }
+      ],
+      "paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+      "maxValue": 2000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 851.14
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 851.14
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_cost_grow_p",
+      "paramLabel": "Urban Average Cost Growth Rate",
+      "paramDescription": "Urban average cost growth rate",
+      "paramUnit": "prop/yr",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0.02
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 0.02
+        }
+      ],
+      "paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+      "maxValue": 0.2,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0.02
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_av_gw_cost0_p",
+      "paramLabel": "Urban Average Pumping Cost",
+      "paramDescription": "Average cost of  urban aquifer pumping excluding treatment",
+      "paramUnit": "1000 USD",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 30
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 30
+        }
+      ],
+      "paramDefaultSource": "http://www.epwu.org/water/water_resources.html",
+      "maxValue": 200,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 30
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_gw_cost_grow_p",
+      "paramLabel": "Urban Average Pumping Cost Growth Rate",
+      "paramDescription": "Urban Average Pumping Cost Growth Rate",
+      "paramUnit": "prop/yr",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 0
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 0.2,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_gw_pump_capacity_p",
+      "paramLabel": "Urban Pumping Capacity",
+      "paramDescription": "Urban Pumping Capacity",
+      "paramUnit": "KAF/yr",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 40
+        },
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 12
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 60
+        }
+      ],
+      "paramDefaultSource": "http://www.epwu.org/water/water_resources.html",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 40
+        },
+        {
+          "aqf": "Mesilla_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 12
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "miuse": "EPMI_u_f",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "us_mx_1906_p",
+      "paramLabel": "Observed US-Mexico 1906 Treaty Flows at Acequia Madre",
+      "paramDescription": "Observed US-Mexico 1906 Treaty Flows at Acequia Madre",
+      "paramUnit": "1000 AF/yr",
+      "paramDefaultValue": [
+        {
+          "t": "1996",
+          "value": 60.085
+        },
+        {
+          "t": "1997",
+          "value": 59.463
+        },
+        {
+          "t": "1998",
+          "value": 60.65
+        },
+        {
+          "t": "1999",
+          "value": 58.329
+        },
+        {
+          "t": "2000",
+          "value": 60.633
+        },
+        {
+          "t": "2001",
+          "value": 61.059
+        },
+        {
+          "t": "2002",
+          "value": 60.346
+        },
+        {
+          "t": "2003",
+          "value": 26.958
+        },
+        {
+          "t": "2004",
+          "value": 27.623
+        },
+        {
+          "t": "2005",
+          "value": 58.111
+        },
+        {
+          "t": "2006",
+          "value": 27.127
+        },
+        {
+          "t": "2007",
+          "value": 51.263
+        },
+        {
+          "t": "2008",
+          "value": 53.703
+        },
+        {
+          "t": "2009",
+          "value": 57.746
+        },
+        {
+          "t": "2010",
+          "value": 56.404
+        },
+        {
+          "t": "2011",
+          "value": 25.735
+        },
+        {
+          "t": "2012",
+          "value": 23.079
+        },
+        {
+          "t": "2013",
+          "value": 3.766
+        },
+        {
+          "t": "2014",
+          "value": 12.948
+        },
+        {
+          "t": "2015",
+          "value": 33.413
+        }
+      ],
+      "paramDefaultSource": "https://en.wikipedia.org/wiki/International_Diversion_Dam",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "t": "1996",
+          "value": 60.085
+        },
+        {
+          "t": "1997",
+          "value": 59.463
+        },
+        {
+          "t": "1998",
+          "value": 60.65
+        },
+        {
+          "t": "1999",
+          "value": 58.329
+        },
+        {
+          "t": "2000",
+          "value": 60.633
+        },
+        {
+          "t": "2001",
+          "value": 61.059
+        },
+        {
+          "t": "2002",
+          "value": 60.346
+        },
+        {
+          "t": "2003",
+          "value": 26.958
+        },
+        {
+          "t": "2004",
+          "value": 27.623
+        },
+        {
+          "t": "2005",
+          "value": 58.111
+        },
+        {
+          "t": "2006",
+          "value": 27.127
+        },
+        {
+          "t": "2007",
+          "value": 51.263
+        },
+        {
+          "t": "2008",
+          "value": 53.703
+        },
+        {
+          "t": "2009",
+          "value": 57.746
+        },
+        {
+          "t": "2010",
+          "value": 56.404
+        },
+        {
+          "t": "2011",
+          "value": 25.735
+        },
+        {
+          "t": "2012",
+          "value": 23.079
+        },
+        {
+          "t": "2013",
+          "value": 3.766
+        },
+        {
+          "t": "2014",
+          "value": 12.948
+        },
+        {
+          "t": "2015",
+          "value": 33.413
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "tx_proj_op_p",
+      "paramLabel": "Texas proportion of San Marcial Flows",
+      "paramDescription": "Texas proportion of San Marcial Flows according to the 2008 Project Operating Agreement",
+      "paramUnit": "prop",
+      "paramDefaultValue": 0.43,
+      "paramDefaultSource": "http://www.houstonchronicle.com/news/texas/article/Feds-issue-decision-on-operating-plan-for-Rio-10839313.php",
+      "maxValue": 1,
+      "minValue": 0,
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": 0.43
+    },
+    {
+      "modelID": "003",
+      "paramName": "sw_sustain_p",
+      "paramLabel": "Ending Proportion of Starting Surface Water Storage",
+      "paramDescription": "Ending Proportion of Starting Surface Water Storage",
+      "paramUnit": "prop",
+      "paramDefaultValue": 0.25,
+      "paramDefaultSource": "",
+      "maxValue": 1,
+      "minValue": 0,
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": 0.25
+    },
+    {
+      "modelID": "003",
+      "paramName": "gw_sustain_p",
+      "paramLabel": "Ending Proportion of Starting Ground Water Storage",
+      "paramDescription": "Ending Proportion of Starting Ground Water Storage",
+      "paramUnit": "prop",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 1
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 1
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 1,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 1
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "sourc_p",
+      "paramLabel": "Annual Water Inflows at San Marcial Gauge",
+      "paramDescription": "Annual Water Inflows at San Marcial Gauge",
+      "paramUnit": "1000 AF/yr",
+      "paramDefaultValue": [
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1996",
+          "value": 524
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1997",
+          "value": 943
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1998",
+          "value": 919
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1999",
+          "value": 871
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2000",
+          "value": 461
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2001",
+          "value": 482
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2002",
+          "value": 260
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2003",
+          "value": 206
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2004",
+          "value": 377
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2005",
+          "value": 959
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2006",
+          "value": 485
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2007",
+          "value": 648
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2008",
+          "value": 911
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2009",
+          "value": 701
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2010",
+          "value": 550
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2011",
+          "value": 302
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2012",
+          "value": 316
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2013",
+          "value": 253
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2014",
+          "value": 339
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2015",
+          "value": 402
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1996",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1997",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1998",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1999",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2000",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2001",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2002",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2003",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2004",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2005",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2006",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2007",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2008",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2009",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2010",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2011",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2012",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2013",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2014",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2015",
+          "value": 0
+        }
+      ],
+      "paramDefaultSource": "Historical or forecast headwater node flows",
+      "maxValue": 1000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1996",
+          "value": 524
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1997",
+          "value": 943
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1998",
+          "value": 919
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "1999",
+          "value": 871
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2000",
+          "value": 461
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2001",
+          "value": 482
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2002",
+          "value": 260
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2003",
+          "value": 206
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2004",
+          "value": 377
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2005",
+          "value": 959
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2006",
+          "value": 485
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2007",
+          "value": 648
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2008",
+          "value": 911
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2009",
+          "value": 701
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2010",
+          "value": 550
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2011",
+          "value": 302
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2012",
+          "value": 316
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2013",
+          "value": 253
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2014",
+          "value": 339
+        },
+        {
+          "inflow": "Marcial_h_f",
+          "t": "2015",
+          "value": 402
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1996",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1997",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1998",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1999",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2000",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2001",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2002",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2003",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2004",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2005",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2006",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2007",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2008",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2009",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2010",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2011",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2012",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2013",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2014",
+          "value": 0
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2015",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "z0_p",
+      "paramLabel": "Initial Project Storage Level",
+      "paramDescription": "Initial reservoir levels at reservoir stock nodes",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "res": "Store_res_s",
+          "p": "1-policy_hist",
+          "value": 2204.7
+        },
+        {
+          "res": "Store_res_s",
+          "p": "2-policy_base",
+          "value": 2204.7
+        },
+        {
+          "res": "Store_res_s",
+          "p": "3-policy_new",
+          "value": 1984.23
+        }
+      ],
+      "paramDefaultSource": "https://pubs.usgs.gov/wdr/1996/nm-96-1/report.pdf",
+      "maxValue": 2544,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "res": "Store_res_s",
+          "p": "1-policy_hist",
+          "value": 2204.7
+        },
+        {
+          "res": "Store_res_s",
+          "p": "2-policy_base",
+          "value": 2204.7
+        },
+        {
+          "res": "Store_res_s",
+          "p": "3-policy_new",
+          "value": 1984.23
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "zmax_p",
+      "paramLabel": "Reservoir Storage Capacity",
+      "paramDescription": "Maximum reservoir storage capacity",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "res": "store_res_s",
+          "value": 2544
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 5000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "res": "store_res_s",
+          "value": 2544
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "q0_p",
+      "paramLabel": "Initial Aquifer Level",
+      "paramDescription": "Aquifer Starting Storage Level",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 45000
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 7000
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 70000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 45000
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 7000
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "qmax_p",
+      "paramLabel": "Aquifer Storage Capacity",
+      "paramDescription": "Storage capacity by aquifer",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 50000
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 9000
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 100000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 50000
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 9000
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "aq_area_p",
+      "paramLabel": "Land Area Overlying Aquifer",
+      "paramDescription": "Land Area Overlying Aquifer",
+      "paramUnit": "1000 ac",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 704
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 1600
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 2000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 704
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 1600
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "recharge_p",
+      "paramLabel": "Annual Mountain Front Aquifer Recharge",
+      "paramDescription": "Annual mountain front aquifer recharge",
+      "paramUnit": "1000 AF/yr",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 10.8
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 10.94
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 20,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 10.8
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 10.94
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "porosity_p",
+      "paramLabel": "Average Aquifer Porosity",
+      "paramDescription": "Average Aquifer Porosity",
+      "paramUnit": "n/a",
+      "paramDefaultValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 0.1
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 0.178
+        }
+      ],
+      "paramDefaultSource": "http://www.wrri.nmsu.edu/publish/techrpt/abstracts/abs332.html",
+      "maxValue": 0.2,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aqf": "Mesilla_aqf_s",
+          "value": 0.1
+        },
+        {
+          "aqf": "Hueco_aqf_s",
+          "value": 0.178
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "precip_rat_p",
+      "paramLabel": "Reservoir Precipitation Rate",
+      "paramDescription": "Reservoir precipitation rate - feet gained per exposed acre per year",
+      "paramUnit": "ft/yr",
+      "paramDefaultValue": 0.97,
+      "paramDefaultSource": "Historic precipitation data near Truth or Consequences NM",
+      "maxValue": 10,
+      "minValue": 0,
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": 0.97
+    },
+    {
+      "modelID": "003",
+      "paramName": "Evap_rate_p",
+      "paramLabel": "Reservoir Evaporation Rate",
+      "paramDescription": "Reservoir evaporation rate - feet lost per exposed acre",
+      "paramUnit": "ft/yr",
+      "paramDefaultValue": 7.682,
+      "paramDefaultSource": "Source selected New Mexico water reports",
+      "maxValue": 10,
+      "minValue": 0,
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": 7.682
+    },
+    {
+      "modelID": "003",
+      "paramName": "gaugeflow_p",
+      "paramLabel": "Annual Gauged Streamflows",
+      "paramDescription": "Annual auged streamflows at selected gauges",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1996",
+          "value": 820
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1997",
+          "value": 763
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1998",
+          "value": 817
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1999",
+          "value": 728
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2000",
+          "value": 756
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2001",
+          "value": 791
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2002",
+          "value": 802
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2003",
+          "value": 389
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2004",
+          "value": 398
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2005",
+          "value": 654
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2006",
+          "value": 444
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2007",
+          "value": 611
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2008",
+          "value": 670
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2009",
+          "value": 725
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2010",
+          "value": 665
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2011",
+          "value": 403
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2012",
+          "value": 371
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2013",
+          "value": 168
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2014",
+          "value": 400
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2015",
+          "value": 400
+        }
+      ],
+      "paramDefaultSource": "http://www.ibwc.state.gov/water_data/histflo1.htm , https://waterdata.usgs.gov/nwis/annual?referred_module=sw&search_site_no=08362500&format=sites_selection_links    march 6 2017 ",
+      "maxValue": 1000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1996",
+          "value": 820
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1997",
+          "value": 763
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1998",
+          "value": 817
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "1999",
+          "value": 728
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2000",
+          "value": 756
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2001",
+          "value": 791
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2002",
+          "value": 802
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2003",
+          "value": 389
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2004",
+          "value": 398
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2005",
+          "value": 654
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2006",
+          "value": 444
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2007",
+          "value": 611
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2008",
+          "value": 670
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2009",
+          "value": 725
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2010",
+          "value": 665
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2011",
+          "value": 403
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2012",
+          "value": 371
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2013",
+          "value": 168
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2014",
+          "value": 400
+        },
+        {
+          "river": "RG_Caballo_out_v_f",
+          "t": "2015",
+          "value": 400
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "z_p",
+      "paramLabel": "Rio Grande Project Storage by year",
+      "paramDescription": "Rio Grande Project Storage by year (EB + Caballo)",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "u": "Store_res_s",
+          "t": "1996",
+          "value": 2204.7
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1997",
+          "value": 1761.21
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1998",
+          "value": 1972.06
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1999",
+          "value": 1740.62
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2000",
+          "value": 1751.55
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2001",
+          "value": 1307.24
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2002",
+          "value": 923.74
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2003",
+          "value": 388.74
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2004",
+          "value": 223.15
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2005",
+          "value": 217.87
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2006",
+          "value": 446.06
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2007",
+          "value": 558.63
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2008",
+          "value": 433.57
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2009",
+          "value": 658.8
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2010",
+          "value": 550.423
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2011",
+          "value": 453.62
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2012",
+          "value": 308.997
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2013",
+          "value": 169.662
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2014",
+          "value": 294.713
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2015",
+          "value": 271.933
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 1000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "u": "Store_res_s",
+          "t": "1996",
+          "value": 2204.7
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1997",
+          "value": 1761.21
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1998",
+          "value": 1972.06
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1999",
+          "value": 1740.62
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2000",
+          "value": 1751.55
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2001",
+          "value": 1307.24
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2002",
+          "value": 923.74
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2003",
+          "value": 388.74
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2004",
+          "value": 223.15
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2005",
+          "value": 217.87
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2006",
+          "value": 446.06
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2007",
+          "value": 558.63
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2008",
+          "value": 433.57
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2009",
+          "value": 658.8
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2010",
+          "value": 550.423
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2011",
+          "value": 453.62
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2012",
+          "value": 308.997
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2013",
+          "value": 169.662
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2014",
+          "value": 294.713
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2015",
+          "value": 271.933
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "residdd_p",
+      "paramLabel": "Observed Predicted Storage by year",
+      "paramDescription": "Observed Predicted Storage by year",
+      "paramUnit": "1000 AF",
+      "paramDefaultValue": [
+        {
+          "u": "Store_res_s",
+          "t": "1997",
+          "value": -446.17
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1998",
+          "value": 307.4
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1999",
+          "value": -199.2
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2000",
+          "value": 482.28
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2001",
+          "value": -3.7
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2002",
+          "value": 251.5
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2003",
+          "value": -312.86
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2004",
+          "value": -122.12
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2005",
+          "value": -288.35
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2006",
+          "value": 232.1
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2007",
+          "value": 131.81
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2008",
+          "value": -322.4
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2009",
+          "value": 315.55
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2010",
+          "value": 62.04
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2011",
+          "value": 49.87
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2012",
+          "value": -58.51
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2013",
+          "value": -207.26
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2014",
+          "value": 215.73
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2015",
+          "value": 2.6
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 1000,
+      "minValue": -10000,
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "u": "Store_res_s",
+          "t": "1997",
+          "value": -446.17
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1998",
+          "value": 307.4
+        },
+        {
+          "u": "Store_res_s",
+          "t": "1999",
+          "value": -199.2
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2000",
+          "value": 482.28
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2001",
+          "value": -3.7
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2002",
+          "value": 251.5
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2003",
+          "value": -312.86
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2004",
+          "value": -122.12
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2005",
+          "value": -288.35
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2006",
+          "value": 232.1
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2007",
+          "value": 131.81
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2008",
+          "value": -322.4
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2009",
+          "value": 315.55
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2010",
+          "value": 62.04
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2011",
+          "value": 49.87
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2012",
+          "value": -58.51
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2013",
+          "value": -207.26
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2014",
+          "value": 215.73
+        },
+        {
+          "u": "Store_res_s",
+          "t": "2015",
+          "value": 2.6
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "LANDRHS_p",
+      "paramLabel": "Developed Land Area by ID",
+      "paramUnit": "1000 ac",
+      "paramDefaultValue": [
+        {
+          "aguse": "EBID_u_f",
+          "value": 90
+        },
+        {
+          "aguse": "EPID_u_f",
+          "value": 55
+        },
+        {
+          "aguse": "MXID_u_f",
+          "value": 15
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 100,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "aguse": "EBID_u_f",
+          "value": 90
+        },
+        {
+          "aguse": "EPID_u_f",
+          "value": 55
+        },
+        {
+          "aguse": "MXID_u_f",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "Bag_pump_aqf_return_p",
+      "paramLabel": "Proportion of agricultural water pumped recharging pumped aquifer",
+      "paramUnit": "prop",
+      "paramDefaultValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 0.2
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": 0,
+      "minValue": 1,
+      "structType": "table",
+      "structDimension": "3",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "aguse": "EBID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EBID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "MXID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "pecans",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "veges",
+          "k": "flood",
+          "value": 0.2
+        },
+        {
+          "aguse": "EPID_u_f",
+          "j": "forage",
+          "k": "flood",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_av_back_cost0_p",
+      "paramLabel": "Urban Backstop Technology Costs",
+      "paramDescription": "Urban backstop technology costs including treatment approximate cost of imported water as of 2017",
+      "paramUnit": "n/a",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 1500
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 1500
+        }
+      ],
+      "paramDefaultSource": "https://wrrc.arizona.edu/awr/s11/financing",
+      "maxValue": 3000,
+      "minValue": 0,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 1500
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 1500
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "urb_back_cost_grow_p",
+      "paramLabel": "Growth in Urban Backstop Technology Costs",
+      "paramDescription": "Growth in urban backstop technology costs prortion per year (may fall)",
+      "paramUnit": "prop",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": -1,
+      "minValue": 1,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "modelID": "003",
+      "paramName": "Burb_back_aqf_rch_p",
+      "paramLabel": "Proportion of urban water from backstop technology recharging aquifer",
+      "paramDescription": "Proportion of urban water from backstop technology recharging aquifer",
+      "paramUnit": "prop",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0.5
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0.5
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": -1,
+      "minValue": 1,
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": 0.5
+        },
+        {
+          "miuse": "EPMI_u_f",
+          "value": 0.5
+        }
+      ]
+    }
+  ],
+  "modelOutputs": [
+	 {
+	   "varName": "Z_v",
+	   "varLabel": "Reservoir Storage Volume",
+	   "varDescription": "Reservoir water storage",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "Q_v",
+	   "varLabel": "Aquifer Storage Volume",
+	   "varDescription": "Aquifer water storage",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "Aquifer_depth_v",
+	   "varLabel": "Aquifer Depth",
+	   "varDescription": "Aquifer depth",
+	   "varUnit": "ft/yr"
+	 },
+	 {
+	   "varName": "Evaporation_v",
+	   "varLabel": "Reservoir Surface Evaporation",
+	   "varDescription": "Reservoir surface evaporation by year",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "Precip_v",
+	   "varLabel": "Reservoir Surface Precipation ",
+	   "varDescription": "Reservoir surface precipation by year",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "surf_area_v",
+	   "varLabel": "Reservoir Surface Area",
+	   "varDescription": "Reservoir surface area by year",
+	   "varUnit": "1000 ac/ yr"
+	 },
+	 {
+	   "varName": "SWacres_v",
+	   "varLabel": "Surface Irrigated Land in Production",
+	   "varDescription": "Surface irrigated land in production",
+	   "varUnit": "1000 ac/ yr"
+	 },
+	 {
+	   "varName": "GWAcres_v",
+	   "varLabel": "Aquifer Irrigated Land in Production",
+	   "varDescription": "Aquifer irrigated land in production",
+	   "varUnit": "1000 ac/ yr"
+	 },
+	 {
+	   "varName": "tot_acres_v",
+	   "varLabel": "Total Irrigated Land in Production",
+	   "varDescription": "Total irrigated land in production summmed over crops and technologies",
+	   "varUnit": "1000 ac/ yr"
+	 },
+	 {
+	   "varName": "Ag_use_v",
+	   "varLabel": "Irrigation Surface Water Use",
+	   "varDescription": "Irrigation Surface Water Use summed over crops and technologies",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "ag_pump_v",
+	   "varLabel": "Agricultural Pumping",
+	   "varDescription": "Agricultural pumping by crop and technology",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "tot_ag_pump_v",
+	   "varLabel": "Total Agricultural Pumping",
+	   "varDescription": "Total agricultural pumping summed over crops and technology",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "Ag_pump_aq_rch_v",
+	   "varLabel": "Agricultural Pumping that Contributes to Aquifer Recharge",
+	   "varDescription": "Agricultural pumping that contributes to aquifer recharge",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "Aga_returns_v",
+	   "varLabel": "Agricultural Diversions that Contributes to Aquifer Recharge",
+	   "varDescription": "Surface return flow from agricultural river diversions that return to the aquifer",
+	   "varUnit": "1000 AF/hr"
+	 },
+	 {
+	   "varName": "urb_use_v",
+	   "varLabel": "Urban Water Use",
+	   "varDescription": "Urban water use (surface diversions + pumping)",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "urb_sw_use_v",
+	   "varLabel": "Urban Water Use from Surface Water",
+	   "varDescription": "Urban water use from surface water",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "urb_gw_use_v",
+	   "varLabel": "Urban Water Use from Ground Water",
+	   "varDescription": "Urban water use from ground water",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "urb_back_use_v",
+	   "varLabel": "Urban Water Use from Backstop Technology",
+	   "varDescription": "Urban water use from backstop technology",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "urb_back_aq_rch_v",
+	   "varLabel": "Urban Water Use from Backstop Technology Recharging Aquifer",
+	   "varDescription": "Urban water use from backstop technology recharging the aquifer",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "urb_pump_v",
+	   "varLabel": "Urban Water Pumping",
+	   "varDescription": "Urban water pumping from aquifer",
+	   "varUnit": "1000 AF/yr"
+	 },
+	 {
+	   "varName": "yield_v",
+	   "varLabel": "Crop Yield",
+	   "varDescription": "Yield by crop and technology",
+	   "varUnit": "tons/ac"
+	 },
+	 {
+	   "varName": "X_v",
+	   "varLabel": "Flows",
+	   "varDescription": "Flows of all kinds (sanke X_v by river gauge)",
+	   "varUnit": "AF/yr"
+	 },
+	 {
+	   "varName": "urb_price_v",
+	   "varLabel": "Urban Price",
+	   "varDescription": "Urban water price",
+	   "varUnit": "USD/AF"
+	 },
+	 {
+	   "varName": "urb_con_surp_v",
+	   "varLabel": "Urban Consumer Surplus",
+	   "varDescription": "Difference between what customer is willing to pay to what he has to pay",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "urb_use_p_cap_v",
+	   "varLabel": "Urban Use per Household",
+	   "varDescription": "Total urban use divided by total customer households",
+	   "varUnit": "AF/yr"
+	 },
+	 {
+	   "varName": "urb_revenue_v",
+	   "varLabel": "Urban Gross Revenues from Water Sales",
+	   "varDescription": "Price per acre feet multiplied by quantity supplied by the urban supplier",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "urb_gross_ben_v",
+	   "varLabel": "Urban Gross Benefits from Water Sales",
+	   "varDescription": "Revenue plus consumer surplus",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "urb_costs_v",
+	   "varLabel": "Urban Costs of Water Supply",
+	   "varDescription": "Total cost of urban supplied water",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "urb_value_v",
+	   "varLabel": "Urban Net Economic Benefits",
+	   "varDescription": "Producer plus consumer surplus (urban gross benefits - cost of supply)",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Urb_value_af_v",
+	   "varLabel": "Urban Economic Benefits",
+	   "varDescription": "Urban economic benefits per acre foot",
+	   "varUnit": "USD/AF"
+	 },
+	 {
+	   "varName": "urb_m_value_v",
+	   "varLabel": "Urban Marginal Benefits",
+	   "varDescription": "Marginal net benefit (price - marginal cost)",
+	   "varUnit": "USD/AF"
+	 },
+	 {
+	   "varName": "Ag_costs_v",
+	   "varLabel": "Agricultural Production Costs",
+	   "varDescription": "Agricultural production costs (surface water + ground water) ",
+	   "varUnit": "USD/yr"
+	 },
+	 {
+	   "varName": "Ag_value_v",
+	   "varLabel": "Agricutural Net Economic Value",
+	   "varDescription": "Agricultural net economic value (total profitability)",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Netrev_acre_v",
+	   "varLabel": "Agricultural Net Revenue",
+	   "varDescription": "Agricultural net revenue per acre   (profitability divided by land)",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Ag_Ben_v",
+	   "varLabel": "Net Income Over Crops",
+	   "varDescription": "Net income over crops by farming region and year",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "T_ag_ben_v",
+	   "varLabel": "Discounted Net Regional Farm Income",
+	   "varDescription": "Discounted net present value of regional farm income",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Env_ben_v",
+	   "varLabel": "Environmental Economic Benefits",
+	   "varDescription": "Environmental benefits by year (willingness to pay for environmental flows)",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "rec_ben_v",
+	   "varLabel": "Reservoir Recreation Economic Benefits",
+	   "varDescription": "Reservoir recreation benefits by year (willingness to pay for recreation values)",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Tot_ag_ben_v",
+	   "varLabel": "Total Agricultural Benefits by Year",
+	   "varDescription": "Sum of farm benefits over region",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Tot_urb_ben_v",
+	   "varLabel": "Total Urban Benefits by Year",
+	   "varDescription": "Sum of urban benefits over region",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Tot_env_riv_ben_v",
+	   "varLabel": "Total River Environmental Benefits by Year",
+	   "varDescription": "Sum of river benefits over region",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "Tot_ben_v",
+	   "varLabel": "Total Benefits",
+	   "varDescription": "Sum of total benefits over region and uses",
+	   "varUnit": "1000 USD/ yr"
+	 },
+	 {
+	   "varName": "DNPV_ben_v",
+	   "varLabel": "Discounted NPV Over Uses and Years",
+	   "varDescription": "Sum of total benefits over region, uses and time periods",
+	   "varUnit": "1000 USD"
+	 },
+	 {
+	   "varName": "Ag_m_value_v",
+	   "varLabel": "Agricultural Marginal Benefit",
+	   "varDescription": "Farm price of water plus scarcity value",
+	   "varUnit": "USD/AF"
+	 }
+	],
+  "name": "Case02",
+  "description": "Test case for april 15 bucket model",
+  "isPublic": "true",
+  "id": "1c908dc",
+  "userid": "1",
+  "status": "queued"
+} 

@@ -1,0 +1,802 @@
+{
+  "id": "c982318",
+  "name": "test",
+  "description": "test",
+  "userid": "null",
+  "baseScenario": "Business as usual",
+  "baseClimateScenario": "average",
+  "status": "complete",
+  "isPublic": "true",
+  "modelSettings": [{
+    "modelID": "002",
+    "modelID2": "002",
+    "isGud?": "yes"
+  }],
+  "modelInputs": [{
+    "modelID": "002",
+    "paramUnit": "n/a",
+    "maxValue": "1",
+    "dataType": "double",
+    "paramLabel": "Water Price Elastacity of Demand",
+    "paramName": "elast_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "-1",
+    "paramDefaultSource": "El Paso water study (fullerton): http://www.waterrf.org/resources/Lists/ProjectPapers/Attachments/61/4501_ProjectPaper.pdf",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "-0.32"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "-0.32"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "-0.32"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "-0.32"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "Percent",
+    "maxValue": "1",
+    "dataType": "double",
+    "paramLabel": "Percent Growth in Urban Average Cost of Supply",
+    "paramName": "urb_cost_grow_p",
+    "definitionType": "user",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "0.02"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "0.02"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "0.02"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "0.02"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "$USD/acre-ft",
+    "maxValue": "2000",
+    "dataType": "double",
+    "paramLabel": "Urban Average Cost",
+    "paramName": "urb_av_cost0_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "851.14"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "851.14"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "851.14"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "851.14"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acre-feet",
+    "maxValue": "100000",
+    "dataType": "integer",
+    "paramLabel": "Aquifer Maximum Storage Capacity",
+    "paramName": "qmax_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "aqf": "store_aqf_s",
+      "value": "70000"
+    }],
+    "paramValue": [{
+      "aqf": "store_aqf_s",
+      "value": "70000"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "feet/acre",
+    "maxValue": "20",
+    "structType": "scalar",
+    "dataType": "integer",
+    "paramLabel": "Reservoir Evaporation",
+    "paramName": "Evap_rate_p",
+    "paramDefaultValue": "10",
+    "definitionType": "static",
+    "paramValue": "10"
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acre-feet",
+    "maxValue": "5000",
+    "dataType": "integer",
+    "paramLabel": "Maximum Reservoir Storage Volume",
+    "paramName": "zmax_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "res": "store_res_s",
+      "value": "2544"
+    }],
+    "paramValue": [{
+      "res": "store_res_s",
+      "value": "2544"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acres",
+    "maxValue": "100",
+    "dataType": "double",
+    "paramLabel": "Land in production in a base full supply year",
+    "paramName": "land_p",
+    "definitionType": "static",
+    "structDimension": "3",
+    "minValue": "0",
+    "paramDefaultSource": "NMSU extension budgets",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "use": "ebid_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "22.5"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "22.5"
+    }, {
+      "use": "ebid_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "35"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "35"
+    }],
+    "paramValue": [{
+      "use": "ebid_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "22.5"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "22.5"
+    }, {
+      "use": "ebid_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "35"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "35"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "acres/1000 acre-feet2",
+    "maxValue": "1.00",
+    "structType": "scalar",
+    "dataType": "double",
+    "paramLabel": "Impact of changes in volume on changes in volume squared on changes in area",
+    "paramName": "B2_area_volsq_p",
+    "paramDefaultValue": "0.00",
+    "definitionType": "static",
+    "paramValue": "0.00"
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acres",
+    "maxValue": "100",
+    "dataType": "integer",
+    "paramLabel": "Land Available by Irrigation District",
+    "paramName": "LANDRHS_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "aguse": "EBID_u_f",
+      "value": "90"
+    }, {
+      "aguse": "EPID_u_f",
+      "value": "50"
+    }],
+    "paramValue": [{
+      "aguse": "EBID_u_f",
+      "value": "90"
+    }, {
+      "aguse": "EPID_u_f",
+      "value": "50"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "Percent",
+    "maxValue": "1.00",
+    "structType": "scalar",
+    "dataType": "double",
+    "paramLabel": "Starting Surface Water Storage Proportion",
+    "paramName": "sw_sustain_p",
+    "paramDefaultValue": "0.50",
+    "definitionType": "static",
+    "paramValue": "0.50"
+  }, {
+    "modelID": "002",
+    "paramUnit": "$1000 USD/1000 acre-ft",
+    "maxValue": "2000",
+    "dataType": "double",
+    "paramLabel": "Urban Base Price of Water",
+    "paramName": "urb_price_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "El paso water utilities pricing source Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "851.14"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "851.14"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "851.14"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "851.14"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "Educated Guess",
+    "modelID": "002",
+    "paramUnit": "n/a",
+    "maxValue": "10",
+    "structType": "variable",
+    "dataType": "double",
+    "paramLabel": "Agricultural Pumping Capacity",
+    "paramName": "ag_gw_pump_capacity_p"
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acre-feet/yr",
+    "maxValue": "1000",
+    "dataType": "integer",
+    "paramLabel": "Annual Basin Inflows at Headwaters",
+    "paramName": "source_p",
+    "definitionType": "static",
+    "structDimension": "2",
+    "minValue": "0",
+    "paramDefaultSource": "Historical or forecast headwater node flows",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "t": "1",
+      "inflow": "Marcial1_h_f",
+      "value": "600"
+    }, {
+      "t": "2",
+      "inflow": "Marcial1_h_f",
+      "value": "900"
+    }, {
+      "t": "3",
+      "inflow": "Marcial1_h_f",
+      "value": "500"
+    }, {
+      "t": "1",
+      "inflow": "Wshed_1_h_f",
+      "value": "0"
+    }, {
+      "t": "2",
+      "inflow": "Wshed_1_h_f",
+      "value": "0"
+    }, {
+      "t": "3",
+      "inflow": "Wshed_1_h_f",
+      "value": "0"
+    }],
+    "paramValue": [{
+      "t": "1",
+      "inflow": "Marcial1_h_f",
+      "value": "600"
+    }, {
+      "t": "2",
+      "inflow": "Marcial1_h_f",
+      "value": "900"
+    }, {
+      "t": "3",
+      "inflow": "Marcial1_h_f",
+      "value": "500"
+    }, {
+      "t": "1",
+      "inflow": "Wshed_1_h_f",
+      "value": "0"
+    }, {
+      "t": "2",
+      "inflow": "Wshed_1_h_f",
+      "value": "0"
+    }, {
+      "t": "3",
+      "inflow": "Wshed_1_h_f",
+      "value": "0"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "Percent",
+    "maxValue": "1.00",
+    "structType": "scalar",
+    "dataType": "double",
+    "paramLabel": "Starting Ground Water Storage Proportion",
+    "paramName": "gw_sustain_p",
+    "paramDefaultValue": "0.95",
+    "definitionType": "static",
+    "paramValue": "0.95"
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000s",
+    "maxValue": "500",
+    "dataType": "double",
+    "paramLabel": "Urban Customers",
+    "paramName": "pop0_p",
+    "definitionType": "user",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "Base year (2012) - http://www.epwu.org/whatsnew/pdf/Survey.pdf and http://www.abqjournal.com/479613/news/glitch-causes-billing-issue-for-1800-las-cruces-utility-customers.html",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "20.000"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "207.192"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "20.000"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "207.192"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "acre-feet",
+    "maxValue": "0.2",
+    "dataType": "integer",
+    "paramLabel": "Urban Ground Water Pump Capacity",
+    "paramName": "urb_gw_pump_capacity_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "Educated guess",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "15"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "65"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "15"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "65"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acre-feet",
+    "maxValue": "2544",
+    "dataType": "integer",
+    "paramLabel": "Reservoir Storage Starting Volume",
+    "paramName": "z0_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "res": "Store_res_s",
+      "value": "292"
+    }],
+    "paramValue": [{
+      "res": "Store_res_s",
+      "value": "292"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "Percent",
+    "maxValue": "0.2",
+    "dataType": "double",
+    "paramLabel": "Percent Growth of Urban Aquifer Pumping",
+    "paramName": "urb_gw_cost_grow_p",
+    "definitionType": "user",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "0.02"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "0.02"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "0.02"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "0.02"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acre-feet",
+    "maxValue": "70000",
+    "dataType": "integer",
+    "paramLabel": "Aquifer Starting Storage",
+    "paramName": "q0_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "aqf": "store_aqf_s",
+      "value": "60000"
+    }],
+    "paramValue": [{
+      "aqf": "store_aqf_s",
+      "value": "60000"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "tons/acre",
+    "maxValue": "100",
+    "dataType": "double",
+    "paramLabel": "Crop Yield",
+    "paramName": "Yield_p",
+    "definitionType": "static",
+    "structDimension": "3",
+    "minValue": "0",
+    "paramDefaultSource": "NMSU Extension Budgets",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "use": "EBID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "0.58"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "0.58"
+    }, {
+      "use": "EBID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "17.00"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "17.00"
+    }],
+    "paramValue": [{
+      "use": "EBID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "0.58"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "0.58"
+    }, {
+      "use": "EBID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "17.00"
+    }, {
+      "use": "EPID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "17.00"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "$USD/acre-ft",
+    "maxValue": "2000",
+    "dataType": "double",
+    "paramLabel": "Average Cost of Urban Aquifer Pumping",
+    "paramName": "urb_av_gw_cost0_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "801.14"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "801.14"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "801.14"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "801.14"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "$USD/ton",
+    "maxValue": "10000",
+    "dataType": "double",
+    "paramLabel": "Crop Prices",
+    "paramName": "Price_p",
+    "definitionType": "scenario",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "NMSU extension budgets",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "j": "Pecans",
+      "value": "4560"
+    }, {
+      "j": "Veges",
+      "value": "300"
+    }],
+    "paramValue": [{
+      "j": "Pecans",
+      "value": "4560"
+    }, {
+      "j": "Veges",
+      "value": "300"
+    }]
+  }, {
+    "modelID": "002",
+    "paramUnit": "1000 acre-ft/yr",
+    "maxValue": "300",
+    "dataType": "double",
+    "paramLabel": "Urban Base Water Use",
+    "paramName": "urb_use_p",
+    "definitionType": "static",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "El Paso water production Dec 28 2015: http://www.epwu.org/water/water_resources.html",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "15.000"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "120.597"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "15.000"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "120.597"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "Percent",
+    "maxValue": "1.00",
+    "structType": "scalar",
+    "dataType": "double",
+    "paramLabel": "Downstream Delivery Proportion",
+    "paramName": "BC_p",
+    "paramDefaultValue": "0.80",
+    "definitionType": "static",
+    "paramValue": "0.80"
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "acres/1000 acre-feet",
+    "maxValue": "1.00",
+    "structType": "scalar",
+    "dataType": "double",
+    "paramLabel": "Impact of Changes in Volume on Changes in Area",
+    "paramName": "B1_area_vol_p",
+    "paramDefaultValue": "0.015",
+    "definitionType": "static",
+    "paramValue": "0.015"
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "https://en.wikipedia.org/wiki/International_Diversion_Dam",
+    "modelID": "002",
+    "paramUnit": "1000 acre-feet/yr",
+    "maxValue": "100",
+    "structType": "scalar",
+    "dataType": "integer",
+    "paramLabel": "US-MX 1906 Treaty Flows",
+    "paramName": "us_mx_1906_p",
+    "paramDefaultValue": "60",
+    "definitionType": "static",
+    "paramValue": "60"
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "",
+    "modelID": "002",
+    "paramUnit": "Percent",
+    "maxValue": "1.00",
+    "structType": "scalar",
+    "dataType": "double",
+    "paramLabel": "Project Operation TX Proportion of NM-TX Water Sharing",
+    "paramName": "tx_proj_op_p",
+    "paramDefaultValue": "0.43",
+    "definitionType": "static",
+    "paramValue": "0.43"
+  }, {
+    "modelID": "002",
+    "paramUnit": "$USD/acre",
+    "maxValue": "10000",
+    "dataType": "double",
+    "paramLabel": "Crop Production Costs",
+    "paramName": "Cost_p",
+    "definitionType": "static",
+    "structDimension": "3",
+    "minValue": "0",
+    "paramDefaultSource": "NMSU extension budgets",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "aguse": "EBID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "1700"
+    }, {
+      "aguse": "EPID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "1700"
+    }, {
+      "aguse": "EBID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "4200"
+    }, {
+      "aguse": "EPID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "4200"
+    }],
+    "paramValue": [{
+      "aguse": "EBID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "1700"
+    }, {
+      "aguse": "EPID_u_f",
+      "j": "Pecans",
+      "k": "flood",
+      "value": "1700"
+    }, {
+      "aguse": "EBID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "4200"
+    }, {
+      "aguse": "EPID_u_f",
+      "j": "Veges",
+      "k": "flood",
+      "value": "4200"
+    }]
+  }, {
+    "minValue": "0",
+    "paramDefaultSource": "Educated Guess",
+    "modelID": "002",
+    "paramUnit": "$USD/acre-ft",
+    "maxValue": "100",
+    "structType": "variable",
+    "dataType": "double",
+    "paramLabel": "Agricultural Average Costs of Pumping Ground Water",
+    "paramName": "ag_av_gw_cost_p"
+  }, {
+    "modelID": "002",
+    "paramUnit": "Percent/Yr",
+    "maxValue": "0.2",
+    "dataType": "double",
+    "paramLabel": "Population Growth Rate per Year",
+    "paramName": "rho_pop_p",
+    "definitionType": "user",
+    "structDimension": "1",
+    "minValue": "0",
+    "paramDefaultSource": "US Census el paso county data: population 2010 v 2014 1.0101 pct growth per year: http://quickfacts.census.gov/qfd/states/48/48141.html 833,487(2014) and 800,647 (2010)",
+    "structType": "table",
+    "paramDefaultValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "0.0101"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "0.0101"
+    }],
+    "paramValue": [{
+      "miuse": "LCMI_u_f",
+      "value": "0.0101"
+    }, {
+      "miuse": "epmi_u_f",
+      "value": "0.0101"
+    }]
+  }],
+  "modelOutputs": [{
+    "varLabel": "Flows -- all kinds",
+    "varName": "X_v",
+    "description": "flows -- all kinds                               (L3 \\ yr)   (1000 af \\ yr)",
+    "varUnit": "1000 af/yr"
+  }, {
+    "varLabel": "Water Stocks -- Reservoirs",
+    "varName": "Z_v",
+    "description": "water stocks -- reservoirs                       (L3 \\ yr)   (1000 af by yr)",
+    "varUnit": "1000 af/yr"
+  }, {
+    "varLabel": "Aquifer Storage Volume",
+    "varName": "Q_v",
+    "description": "aquifer storage volume                           (L3 \\ yr)   (1000 af by yrr)",
+    "varUnit": "1000 af/yr"
+  }, {
+    "varLabel": "Irrigation Surface Water Use",
+    "varName": "Ag_use_v",
+    "description": "irrigation surface water use                     (L3 \\ yr)   (1000 af \\ yr)",
+    "varUnit": "1000 af/yr"
+  }, {
+    "varLabel": "Urban Water Use",
+    "varName": "urb_use_v",
+    "description": "urban water use                                  (L3 \\ yr)   (1000 af \\ yr)",
+    "varUnit": "1000 af/yr"
+  }, {
+    "varLabel": "Farm Income",
+    "varName": "Ag_Ben_v",
+    "description": "net income over crops by node and yr             ($1000 \\ yr)",
+    "varUnit": "$1000/yr"
+  }, {
+    "varLabel": "Urban Net Benefits",
+    "varName": "urb_value_v",
+    "description": "urban net economic benefits                      ($US 1000 per year)",
+    "varUnit": "$1000/yr"
+  }, {
+    "varLabel": "Reservoir Recreational Benefits",
+    "varName": "rec_ben_v",
+    "description": "reservoir recreation benefits by year            ($1000 \\ yr)",
+    "varUnit": "$1000/yr"
+  }, {
+    "varLabel": "Environmental Benefits",
+    "varName": "Env_ben_v",
+    "description": "enviornmental benefits by year                   ($1000 \\ yr)",
+    "varUnit": "$1000/yr"
+  }]
+}

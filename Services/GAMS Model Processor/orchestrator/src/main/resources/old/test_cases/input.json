@@ -1,0 +1,149 @@
+{
+  "name": "test case 01",
+  "baseScenario": "Business as usual",
+  "description": "formal test case 01 made on March 9 2017, mapping of scalars, and table dimensions 1 and 2",
+  "isPublic": "true",
+  "baseClimateScenario": "average",
+  "id": "e013a4b1",
+  "userid": "null",
+  "status": "queued",
+  "modelSettings": [
+    {
+      "modelID": "002"
+    }
+  ],
+  "modelInputs": {
+    "pop0_p": {
+      "modelID": "002",
+      "paramName": "pop0_p",
+      "paramLabel": "Urban Customers",
+      "paramUnit": "1000s",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "20.000"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "207.192"
+        }
+      ],
+      "paramDefaultSource": "Base year (2012) - http://www.epwu.org/whatsnew/pdf/Survey.pdf and http://www.abqjournal.com/479613/news/glitch-causes-billing-issue-for-1800-las-cruces-utility-customers.html",
+      "maxValue": "500",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "20.000"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "207.192"
+        }
+      ]
+    },
+    "rho_pop_p": {
+      "modelID": "002",
+      "paramName": "rho_pop_p",
+      "paramLabel": "Population growth rate per year",
+      "paramUnit": "Percentage/Yr",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "0.0101"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "0.0101"
+        }
+      ],
+      "paramDefaultSource": "US Census el paso county data: population 2010 v 2014 1.0101 pct growth per year: http://quickfacts.census.gov/qfd/states/48/48141.html 833,487(2014) and 800,647 (2010)",
+      "maxValue": "0.2",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "0.2"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "0.2"
+        }
+      ]
+    },
+    "urb_cost_grow_p": {
+      "modelID": "002",
+      "paramName": "urb_cost_grow_p",
+      "paramLabel": "Percentage growth in urban average cost of supply",
+      "paramUnit": "Percentage",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "0.02"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "0.02"
+        }
+      ],
+      "paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+      "maxValue": "1",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "0.02"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "0.02"
+        }
+      ]
+    },
+    "urb_gw_cost_grow_p": {
+      "modelID": "002",
+      "paramName": "urb_gw_cost_grow_p",
+      "paramLabel": "Percentage growth of urban aquifer pumping",
+      "paramUnit": "Percentage",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "0.02"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "0.02"
+        }
+      ],
+      "paramDefaultSource": "",
+      "maxValue": "0.2",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "0.02"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "0.02"
+        }
+      ]
+    }
+  }
+} 
