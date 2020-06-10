@@ -14,12 +14,32 @@ This service was tested on Windows Server 2012
 + Java Libraries: Managed with Maven
 + Scilab 5.5.2 
 
-## Notes
-The org.scilab.modules maven package was manually created on the local .m2 repository using the following command:
 
+## Setting Scilab Libraries as Maven Local Repo
+
+1. Install Scilab version 5.5.2
+2. Setup environment variable 'SCI' pointing to the scilab root folder e.g. 'C:\Program Files\scilab-5.5.2'
+3. Create local maven repos for scilab java api
+
+Linux Samples: 
+
+-- javasci
+`mvn install:install-file -Dfile=/opt/scilab-6.0.2/share/scilab/modules/javasci/jar/org.scilab.modules.javasci.jar -DgroupId=org.scilab.modules -DartifactId=javasci -Dversion=6.0.2 -Dpackaging=jar`
+
+-- types
+`mvn install:install-file -Dfile=/opt/scilab-6.0.2/share/scilab/modules/types/jar/org.scilab.modules.types.jar -DgroupId=org.scilab.modules -DartifactId=types -Dversion=6.0.2 -Dpackaging=jar`
+
+Windows Samples:     
+
+-- javasci
 `mvn install:install-file -Dfile="C:/Program Files/scilab-5.5.2/modules/javasci/jar/org.scilab.modules.javasci.jar" -DgroupId=org.scilab.modules -DartifactId=javasci -Dversion=5.5.2 -Dpackaging=jar`
+
+-- types
+`mvn install:install-file -Dfile="C:/Program Files/scilab-5.5.2/modules/types/jar/org.scilab.modules.types.jar" -DgroupId=org.scilab.modules -DartifactId=types -Dversion=5.5.2 -Dpackaging=jar`
 
 For more information on local Maven repositories follow:
 <http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html>
 
-Issues where presented to interface Java with Scilab on versions above 5.5.2
+
+### Notes
+Issues were presented to interface Java with Scilab on versions above 5.5.2
