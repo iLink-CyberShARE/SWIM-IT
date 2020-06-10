@@ -23,18 +23,18 @@ This service was tested on Windows Server 2012
 
 Linux Samples: 
 
--- javasci
+-- javasci  
 `mvn install:install-file -Dfile=/opt/scilab-6.0.2/share/scilab/modules/javasci/jar/org.scilab.modules.javasci.jar -DgroupId=org.scilab.modules -DartifactId=javasci -Dversion=6.0.2 -Dpackaging=jar`
 
--- types
+-- types  
 `mvn install:install-file -Dfile=/opt/scilab-6.0.2/share/scilab/modules/types/jar/org.scilab.modules.types.jar -DgroupId=org.scilab.modules -DartifactId=types -Dversion=6.0.2 -Dpackaging=jar`
 
 Windows Samples:     
 
--- javasci
+-- javasci  
 `mvn install:install-file -Dfile="C:/Program Files/scilab-5.5.2/modules/javasci/jar/org.scilab.modules.javasci.jar" -DgroupId=org.scilab.modules -DartifactId=javasci -Dversion=5.5.2 -Dpackaging=jar`
 
--- types
+-- types  
 `mvn install:install-file -Dfile="C:/Program Files/scilab-5.5.2/modules/types/jar/org.scilab.modules.types.jar" -DgroupId=org.scilab.modules -DartifactId=types -Dversion=5.5.2 -Dpackaging=jar`
 
 For more information on local Maven repositories follow:
