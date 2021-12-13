@@ -1,0 +1,152 @@
+{
+  "id": "996749cd-28cb-41e3-8514-3fa3634c8d9e",
+  "name": "October model test",
+  "description": "testing the new JSON structure",
+  "isPublic": "true",
+  "baseClimateScenario": "average",
+  "userid": "1",
+  "status": "queued",
+  "baseScenario": "usual",
+  "modelSettings": [{
+    "modelID": "002"
+  }],
+  "modelInputs": {
+    "land_p": {
+      "modelID": "002",
+      "paramName": "land_p",
+      "paramLabel": "Land in production in a base full supply year eg 2005",
+      "paramUnit": "1000 acres",
+      "paramDefaultValue": [{
+        "use": "flood",
+        "j": "Pecans",
+        "k": "ebid_u_f",
+        "value": "22.5"
+      }, {
+        "use": "flood",
+        "j": "Pecans",
+        "k": "EPID_u_f",
+        "value": "22.5"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "ebid_u_f",
+        "value": "35"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "EPID_u_f",
+        "value": "35"
+      }],
+      "paramDefaultSource": "NMSU extension budgets",
+      "maxValue": "100",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "3",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [{
+        "use": "flood",
+        "j": "Pecans",
+        "k": "ebid_u_f",
+        "value": "22.5"
+      }, {
+        "use": "flood",
+        "j": "Pecans",
+        "k": "EPID_u_f",
+        "value": "22.5"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "ebid_u_f",
+        "value": "35"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "EPID_u_f",
+        "value": "35"
+      }]
+    },
+    "Yield_p": {
+      "modelID": "002",
+      "paramName": "Yield_p",
+      "paramLabel": "Crop Yield",
+      "paramUnit": "tons/acre",
+      "paramDefaultValue": [{
+        "use": "flood",
+        "j": "Pecans",
+        "k": "EBID_u_f",
+        "value": "0.58"
+      }, {
+        "use": "flood",
+        "j": "Pecans",
+        "k": "EPID_u_f",
+        "value": "0.58"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "EBID_u_f",
+        "value": "17.00"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "EPID_u_f",
+        "value": "17.00"
+      }],
+      "paramDefaultSource": "NMSU Extension Budgets",
+      "maxValue": "100",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "3",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [{
+        "use": "flood",
+        "j": "Pecans",
+        "k": "EBID_u_f",
+        "value": "0.58"
+      }, {
+        "use": "flood",
+        "j": "Pecans",
+        "k": "EPID_u_f",
+        "value": "0.58"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "EBID_u_f",
+        "value": "17.00"
+      }, {
+        "use": "flood",
+        "j": "Veges",
+        "k": "EPID_u_f",
+        "value": "17.00"
+      }]
+    },
+    "Price_p": {
+      "modelID": "002",
+      "paramName": "Price_p",
+      "paramLabel": "Crop prices",
+      "paramUnit": "$USD/ton",
+      "paramDefaultValue": [{
+        "j": "Pecans",
+        "value": "4560"
+      }, {
+        "j": "Veges",
+        "value": "300"
+      }],
+      "paramDefaultSource": "NMSU extension budgets",
+      "maxValue": "10000",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [{
+        "j": "Pecans",
+        "value": "4560"
+      }, {
+        "j": "Veges",
+        "value": "300"
+      }]
+    }
+  }
+}

@@ -1,0 +1,10034 @@
+{
+    "name": "Case04",
+    "description": "Test case for October 9 bucket model",
+    "isPublic": "true",
+    "id": "1c978dc",
+    "userid": "1",
+    "status": "queued",
+    "scenarioName": "usual",
+    "scenarioLabel": "Business as usual",
+    "scenarioDescription": "Business as usual scenario",
+    "dateCreated": "2016-10-24T06:16:09-07:00",
+    "dateModified": "2017-10-30T15:06:00-07:00",
+    "modelSettings": [
+        {
+            "modelID": "004",
+            "solver": "NLP",
+            "objective": "DNPV_ben_v_phist_wbase_v"
+        }
+    ],
+    "modelInputs": [
+	{
+		"modelID": "004",
+		"paramName": "Yield_p",
+		"paramDescription": "Amount of a crop that was harvested per unit of land area",
+		"paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-127",
+		"paramCategory": "Agriculture",
+		"paramUnit": "tons/ac",
+		"maxValue": 100,
+		"minValue": 0,
+		"dataType": "double",
+		"paramLabel": "Observed Crop Yield",
+		"definitionType": "user",
+		"structDimension": "3",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 17
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 8
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 17
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 8
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 17
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 8
+			}
+		],
+		"paramValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 17
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 8
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 17
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 8
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 17
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 8
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramName": "Price_p",
+		"paramDescription": "Observed Crop Prices",
+		"paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-128",
+		"paramCategory": "Agriculture",
+		"paramUnit": "USD/ton",
+		"minValue": 0,
+		"maxValue": 10000,
+		"dataType": "integer",
+		"paramLabel": "Observed Crop Prices",
+		"definitionType": "user",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"value": 4960
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"value": 300
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"value": 120
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"value": 4960
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"value": 300
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"value": 120
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"value": 4960
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"value": 300
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"value": 120
+			}
+		],
+		"paramValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"value": 4960
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"value": 300
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"value": 120
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"value": 4960
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"value": 300
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"value": 120
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"value": 4960
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"value": 300
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"value": 120
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramName": "Cost_p",
+		"paramLabel": "Crop Production Costs",
+		"paramDefaultSource": "FA Ward  J Hydrology 2014 vol 508: pp 114-130",
+		"paramCategory": "Agriculture",
+		"paramDescription": "Crop production costs per acre",
+		"maxValue": 10000,
+		"minValue": 0,
+		"paramUnit": "USD/ac",
+		"paramDefaultValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1700
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 4200
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 820
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1700
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 4200
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 820
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1700
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 4200
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 820
+			}
+		],
+		"structType": "table",
+		"structDimension": "3",
+		"dataType": "integer",
+		"definitionType": "static",
+		"paramValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1700
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 4200
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 820
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1700
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 4200
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 820
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 1700
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 4200
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 820
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramName": "ag_gw_pump_capacity_p",
+		"paramLabel": "Agricultural Pumping Capacity",
+		"paramDescription": "Agricultural pumping capacity in acre-feet per year by aquifer",
+		"paramDefaultSource": "annual pump capacity ebid growers nm office of state entineer report: 2010, http://www.ose.state.nm.us/Pub/TechnicalReports/TechReport%2054NM%20Water%20Use%20by%20Categories%20.pdf",
+		"paramCategory": "Agriculture",
+		"paramUnit": "AF/yr",
+		"maxValue": 500,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "EBID_u_f",
+				"value": 250
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "EPID_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "MXID_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "EBID_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "EPID_u_f",
+				"value": 100
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "MXID_u_f",
+				"value": 75
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "EBID_u_f",
+				"value": 250
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "EPID_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "MXID_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "EBID_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "EPID_u_f",
+				"value": 100
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "MXID_u_f",
+				"value": 75
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Ending Proportion of Starting Surface Water Storage",
+		"paramName": "sw_sustain_p",
+		"paramDescription": "Ending Proportion of Starting Surface Water Storage",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "prop",
+		"maxValue": 1,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structType": "scalar",
+		"paramDefaultValue": 0.25,
+		"paramValue": 0.25
+	},
+	{
+		"modelID": "004",
+		"paramName": "lan_p",
+		"paramDescription": "Land in production over all observed historical years",
+		"paramDefaultSource": "USBR - Data Zhuping Sheng TAMU El Paso March 6 2017",
+		"paramCategory": "Agriculture",
+		"paramUnit": "kaF",
+		"minValue": 0,
+		"maxValue": 100,
+		"dataType": "double",
+		"paramLabel": "Observed Land in Production",
+		"definitionType": "static",
+		"structDimension": "4",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"t": 1994,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.546
+			},
+			{
+				"t": 1994,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.252
+			},
+			{
+				"t": 1994,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1994,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 37.126
+			},
+			{
+				"t": 1994,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.303
+			},
+			{
+				"t": 1994,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1994,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.026
+			},
+			{
+				"t": 1994,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.205
+			},
+			{
+				"t": 1994,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1995,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.546
+			},
+			{
+				"t": 1995,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.252
+			},
+			{
+				"t": 1995,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1995,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 37.126
+			},
+			{
+				"t": 1995,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.303
+			},
+			{
+				"t": 1995,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1995,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.026
+			},
+			{
+				"t": 1995,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.205
+			},
+			{
+				"t": 1995,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1996,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.546
+			},
+			{
+				"t": 1996,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.252
+			},
+			{
+				"t": 1996,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1996,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 37.126
+			},
+			{
+				"t": 1996,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.303
+			},
+			{
+				"t": 1996,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1996,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.026
+			},
+			{
+				"t": 1996,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.205
+			},
+			{
+				"t": 1996,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1997,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.759
+			},
+			{
+				"t": 1997,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.39
+			},
+			{
+				"t": 1997,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1997,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 36.48
+			},
+			{
+				"t": 1997,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 33.805
+			},
+			{
+				"t": 1997,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1997,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 25.512
+			},
+			{
+				"t": 1997,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.232
+			},
+			{
+				"t": 1997,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1998,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 19.68
+			},
+			{
+				"t": 1998,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.565
+			},
+			{
+				"t": 1998,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1998,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 32.851
+			},
+			{
+				"t": 1998,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.006
+			},
+			{
+				"t": 1998,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1998,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.839
+			},
+			{
+				"t": 1998,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 9.947
+			},
+			{
+				"t": 1998,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1999,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.172
+			},
+			{
+				"t": 1999,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.913
+			},
+			{
+				"t": 1999,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1999,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 29.464
+			},
+			{
+				"t": 1999,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 30.033
+			},
+			{
+				"t": 1999,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1999,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 27.209
+			},
+			{
+				"t": 1999,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.167
+			},
+			{
+				"t": 1999,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 2000,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.324
+			},
+			{
+				"t": 2000,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.673
+			},
+			{
+				"t": 2000,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2000,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 31.665
+			},
+			{
+				"t": 2000,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 27.712
+			},
+			{
+				"t": 2000,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 2000,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.126
+			},
+			{
+				"t": 2000,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.239
+			},
+			{
+				"t": 2000,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 2001,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.446
+			},
+			{
+				"t": 2001,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.484
+			},
+			{
+				"t": 2001,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2001,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 27.097
+			},
+			{
+				"t": 2001,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 27.362
+			},
+			{
+				"t": 2001,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 2001,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.722
+			},
+			{
+				"t": 2001,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.439
+			},
+			{
+				"t": 2001,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 2002,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.86
+			},
+			{
+				"t": 2002,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.262
+			},
+			{
+				"t": 2002,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.225
+			},
+			{
+				"t": 2002,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.365
+			},
+			{
+				"t": 2002,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 25.68
+			},
+			{
+				"t": 2002,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 3.888
+			},
+			{
+				"t": 2002,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.692
+			},
+			{
+				"t": 2002,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 13.076
+			},
+			{
+				"t": 2002,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 21.879
+			},
+			{
+				"t": 2003,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 19.494
+			},
+			{
+				"t": 2003,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.466
+			},
+			{
+				"t": 2003,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.233
+			},
+			{
+				"t": 2003,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.278
+			},
+			{
+				"t": 2003,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 21.526
+			},
+			{
+				"t": 2003,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.033
+			},
+			{
+				"t": 2003,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.698
+			},
+			{
+				"t": 2003,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.119
+			},
+			{
+				"t": 2003,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 22.694
+			},
+			{
+				"t": 2004,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.19
+			},
+			{
+				"t": 2004,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.893
+			},
+			{
+				"t": 2004,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.261
+			},
+			{
+				"t": 2004,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.299
+			},
+			{
+				"t": 2004,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 22.323
+			},
+			{
+				"t": 2004,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.514
+			},
+			{
+				"t": 2004,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.821
+			},
+			{
+				"t": 2004,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.837
+			},
+			{
+				"t": 2004,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 25.4
+			},
+			{
+				"t": 2005,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.886
+			},
+			{
+				"t": 2005,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.089
+			},
+			{
+				"t": 2005,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.275
+			},
+			{
+				"t": 2005,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 27.35
+			},
+			{
+				"t": 2005,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 23.871
+			},
+			{
+				"t": 2005,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.745
+			},
+			{
+				"t": 2005,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.511
+			},
+			{
+				"t": 2005,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.239
+			},
+			{
+				"t": 2005,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 26.699
+			},
+			{
+				"t": 2006,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.263
+			},
+			{
+				"t": 2006,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.829
+			},
+			{
+				"t": 2006,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.291
+			},
+			{
+				"t": 2006,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.112
+			},
+			{
+				"t": 2006,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 21.783
+			},
+			{
+				"t": 2006,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.028
+			},
+			{
+				"t": 2006,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 19.627
+			},
+			{
+				"t": 2006,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.49
+			},
+			{
+				"t": 2006,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 28.295
+			},
+			{
+				"t": 2007,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.624
+			},
+			{
+				"t": 2007,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.039
+			},
+			{
+				"t": 2007,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.306
+			},
+			{
+				"t": 2007,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.85
+			},
+			{
+				"t": 2007,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.088
+			},
+			{
+				"t": 2007,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.28
+			},
+			{
+				"t": 2007,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.32
+			},
+			{
+				"t": 2007,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.383
+			},
+			{
+				"t": 2007,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 29.709
+			},
+			{
+				"t": 2008,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.293
+			},
+			{
+				"t": 2008,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.249
+			},
+			{
+				"t": 2008,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.357
+			},
+			{
+				"t": 2008,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.162
+			},
+			{
+				"t": 2008,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 16.422
+			},
+			{
+				"t": 2008,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 6.17
+			},
+			{
+				"t": 2008,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.933
+			},
+			{
+				"t": 2008,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.485
+			},
+			{
+				"t": 2008,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 34.718
+			},
+			{
+				"t": 2009,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.06
+			},
+			{
+				"t": 2009,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.611
+			},
+			{
+				"t": 2009,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.332
+			},
+			{
+				"t": 2009,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 17.677
+			},
+			{
+				"t": 2009,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 29.361
+			},
+			{
+				"t": 2009,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.734
+			},
+			{
+				"t": 2009,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.769
+			},
+			{
+				"t": 2009,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 6.215
+			},
+			{
+				"t": 2009,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 32.266
+			},
+			{
+				"t": 2010,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.847
+			},
+			{
+				"t": 2010,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.213
+			},
+			{
+				"t": 2010,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.33
+			},
+			{
+				"t": 2010,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 17.629
+			},
+			{
+				"t": 2010,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 20.256
+			},
+			{
+				"t": 2010,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.702
+			},
+			{
+				"t": 2010,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.435
+			},
+			{
+				"t": 2010,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.591
+			},
+			{
+				"t": 2010,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 32.089
+			},
+			{
+				"t": 2011,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.763
+			},
+			{
+				"t": 2011,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 12.281
+			},
+			{
+				"t": 2011,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.3
+			},
+			{
+				"t": 2011,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 9.692
+			},
+			{
+				"t": 2011,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 28.37
+			},
+			{
+				"t": 2011,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.182
+			},
+			{
+				"t": 2011,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 9.638
+			},
+			{
+				"t": 2011,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 6.555
+			},
+			{
+				"t": 2011,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 29.158
+			},
+			{
+				"t": 2012,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.567
+			},
+			{
+				"t": 2012,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 13.477
+			},
+			{
+				"t": 2012,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.295
+			},
+			{
+				"t": 2012,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 11.231
+			},
+			{
+				"t": 2012,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 26.096
+			},
+			{
+				"t": 2012,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.106
+			},
+			{
+				"t": 2012,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 14.91
+			},
+			{
+				"t": 2012,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 6.11
+			},
+			{
+				"t": 2012,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 28.734
+			},
+			{
+				"t": 2013,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.393
+			},
+			{
+				"t": 2013,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.108
+			},
+			{
+				"t": 2013,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.275
+			},
+			{
+				"t": 2013,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.623
+			},
+			{
+				"t": 2013,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.572
+			},
+			{
+				"t": 2013,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.746
+			},
+			{
+				"t": 2013,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 9.411
+			},
+			{
+				"t": 2013,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.583
+			},
+			{
+				"t": 2013,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 26.705
+			},
+			{
+				"t": 2014,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 31.293
+			},
+			{
+				"t": 2014,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.108
+			},
+			{
+				"t": 2014,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2014,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.656
+			},
+			{
+				"t": 2014,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.572
+			},
+			{
+				"t": 2014,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.313
+			},
+			{
+				"t": 2014,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.668
+			},
+			{
+				"t": 2014,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.583
+			},
+			{
+				"t": 2014,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 26.705
+			},
+			{
+				"t": 2015,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 31.391
+			},
+			{
+				"t": 2015,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.108
+			},
+			{
+				"t": 2015,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2015,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 25.503
+			},
+			{
+				"t": 2015,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.572
+			},
+			{
+				"t": 2015,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.313
+			},
+			{
+				"t": 2015,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.493
+			},
+			{
+				"t": 2015,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.583
+			},
+			{
+				"t": 2015,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.269
+			}
+		],
+		"paramValue": [
+			{
+				"t": 1994,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.546
+			},
+			{
+				"t": 1994,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.252
+			},
+			{
+				"t": 1994,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1994,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 37.126
+			},
+			{
+				"t": 1994,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.303
+			},
+			{
+				"t": 1994,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1994,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.026
+			},
+			{
+				"t": 1994,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.205
+			},
+			{
+				"t": 1994,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1995,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.546
+			},
+			{
+				"t": 1995,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.252
+			},
+			{
+				"t": 1995,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1995,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 37.126
+			},
+			{
+				"t": 1995,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.303
+			},
+			{
+				"t": 1995,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1995,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.026
+			},
+			{
+				"t": 1995,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.205
+			},
+			{
+				"t": 1995,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1996,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.546
+			},
+			{
+				"t": 1996,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.252
+			},
+			{
+				"t": 1996,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1996,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 37.126
+			},
+			{
+				"t": 1996,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.303
+			},
+			{
+				"t": 1996,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1996,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.026
+			},
+			{
+				"t": 1996,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.205
+			},
+			{
+				"t": 1996,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1997,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 18.759
+			},
+			{
+				"t": 1997,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.39
+			},
+			{
+				"t": 1997,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1997,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 36.48
+			},
+			{
+				"t": 1997,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 33.805
+			},
+			{
+				"t": 1997,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1997,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 25.512
+			},
+			{
+				"t": 1997,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.232
+			},
+			{
+				"t": 1997,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1998,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 19.68
+			},
+			{
+				"t": 1998,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.565
+			},
+			{
+				"t": 1998,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1998,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 32.851
+			},
+			{
+				"t": 1998,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 34.006
+			},
+			{
+				"t": 1998,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1998,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.839
+			},
+			{
+				"t": 1998,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 9.947
+			},
+			{
+				"t": 1998,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 1999,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.172
+			},
+			{
+				"t": 1999,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.913
+			},
+			{
+				"t": 1999,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 1999,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 29.464
+			},
+			{
+				"t": 1999,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 30.033
+			},
+			{
+				"t": 1999,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 1999,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 27.209
+			},
+			{
+				"t": 1999,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 8.167
+			},
+			{
+				"t": 1999,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 2000,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.324
+			},
+			{
+				"t": 2000,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.673
+			},
+			{
+				"t": 2000,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2000,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 31.665
+			},
+			{
+				"t": 2000,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 27.712
+			},
+			{
+				"t": 2000,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 2000,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.126
+			},
+			{
+				"t": 2000,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.239
+			},
+			{
+				"t": 2000,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 2001,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.446
+			},
+			{
+				"t": 2001,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.484
+			},
+			{
+				"t": 2001,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2001,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 27.097
+			},
+			{
+				"t": 2001,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 27.362
+			},
+			{
+				"t": 2001,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.319
+			},
+			{
+				"t": 2001,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.722
+			},
+			{
+				"t": 2001,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.439
+			},
+			{
+				"t": 2001,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.303
+			},
+			{
+				"t": 2002,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.86
+			},
+			{
+				"t": 2002,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.262
+			},
+			{
+				"t": 2002,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.225
+			},
+			{
+				"t": 2002,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.365
+			},
+			{
+				"t": 2002,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 25.68
+			},
+			{
+				"t": 2002,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 3.888
+			},
+			{
+				"t": 2002,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 26.692
+			},
+			{
+				"t": 2002,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 13.076
+			},
+			{
+				"t": 2002,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 21.879
+			},
+			{
+				"t": 2003,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 19.494
+			},
+			{
+				"t": 2003,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.466
+			},
+			{
+				"t": 2003,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.233
+			},
+			{
+				"t": 2003,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.278
+			},
+			{
+				"t": 2003,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 21.526
+			},
+			{
+				"t": 2003,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.033
+			},
+			{
+				"t": 2003,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.698
+			},
+			{
+				"t": 2003,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.119
+			},
+			{
+				"t": 2003,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 22.694
+			},
+			{
+				"t": 2004,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.19
+			},
+			{
+				"t": 2004,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.893
+			},
+			{
+				"t": 2004,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.261
+			},
+			{
+				"t": 2004,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.299
+			},
+			{
+				"t": 2004,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 22.323
+			},
+			{
+				"t": 2004,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.514
+			},
+			{
+				"t": 2004,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.821
+			},
+			{
+				"t": 2004,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.837
+			},
+			{
+				"t": 2004,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 25.4
+			},
+			{
+				"t": 2005,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.886
+			},
+			{
+				"t": 2005,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.089
+			},
+			{
+				"t": 2005,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.275
+			},
+			{
+				"t": 2005,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 27.35
+			},
+			{
+				"t": 2005,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 23.871
+			},
+			{
+				"t": 2005,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.745
+			},
+			{
+				"t": 2005,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.511
+			},
+			{
+				"t": 2005,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.239
+			},
+			{
+				"t": 2005,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 26.699
+			},
+			{
+				"t": 2006,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.263
+			},
+			{
+				"t": 2006,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.829
+			},
+			{
+				"t": 2006,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.291
+			},
+			{
+				"t": 2006,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.112
+			},
+			{
+				"t": 2006,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 21.783
+			},
+			{
+				"t": 2006,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.028
+			},
+			{
+				"t": 2006,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 19.627
+			},
+			{
+				"t": 2006,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.49
+			},
+			{
+				"t": 2006,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 28.295
+			},
+			{
+				"t": 2007,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.624
+			},
+			{
+				"t": 2007,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.039
+			},
+			{
+				"t": 2007,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.306
+			},
+			{
+				"t": 2007,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 22.85
+			},
+			{
+				"t": 2007,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.088
+			},
+			{
+				"t": 2007,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.28
+			},
+			{
+				"t": 2007,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.32
+			},
+			{
+				"t": 2007,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.383
+			},
+			{
+				"t": 2007,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 29.709
+			},
+			{
+				"t": 2008,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.293
+			},
+			{
+				"t": 2008,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.249
+			},
+			{
+				"t": 2008,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.357
+			},
+			{
+				"t": 2008,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.162
+			},
+			{
+				"t": 2008,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 16.422
+			},
+			{
+				"t": 2008,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 6.17
+			},
+			{
+				"t": 2008,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 23.933
+			},
+			{
+				"t": 2008,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.485
+			},
+			{
+				"t": 2008,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 34.718
+			},
+			{
+				"t": 2009,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.06
+			},
+			{
+				"t": 2009,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.611
+			},
+			{
+				"t": 2009,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.332
+			},
+			{
+				"t": 2009,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 17.677
+			},
+			{
+				"t": 2009,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 29.361
+			},
+			{
+				"t": 2009,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.734
+			},
+			{
+				"t": 2009,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.769
+			},
+			{
+				"t": 2009,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 6.215
+			},
+			{
+				"t": 2009,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 32.266
+			},
+			{
+				"t": 2010,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.847
+			},
+			{
+				"t": 2010,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 11.213
+			},
+			{
+				"t": 2010,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.33
+			},
+			{
+				"t": 2010,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 17.629
+			},
+			{
+				"t": 2010,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 20.256
+			},
+			{
+				"t": 2010,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.702
+			},
+			{
+				"t": 2010,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.435
+			},
+			{
+				"t": 2010,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 5.591
+			},
+			{
+				"t": 2010,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 32.089
+			},
+			{
+				"t": 2011,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.763
+			},
+			{
+				"t": 2011,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 12.281
+			},
+			{
+				"t": 2011,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.3
+			},
+			{
+				"t": 2011,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 9.692
+			},
+			{
+				"t": 2011,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 28.37
+			},
+			{
+				"t": 2011,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.182
+			},
+			{
+				"t": 2011,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 9.638
+			},
+			{
+				"t": 2011,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 6.555
+			},
+			{
+				"t": 2011,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 29.158
+			},
+			{
+				"t": 2012,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 20.567
+			},
+			{
+				"t": 2012,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 13.477
+			},
+			{
+				"t": 2012,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.295
+			},
+			{
+				"t": 2012,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 11.231
+			},
+			{
+				"t": 2012,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 26.096
+			},
+			{
+				"t": 2012,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 5.106
+			},
+			{
+				"t": 2012,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 14.91
+			},
+			{
+				"t": 2012,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 6.11
+			},
+			{
+				"t": 2012,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 28.734
+			},
+			{
+				"t": 2013,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 21.393
+			},
+			{
+				"t": 2013,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.108
+			},
+			{
+				"t": 2013,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.275
+			},
+			{
+				"t": 2013,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.623
+			},
+			{
+				"t": 2013,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.572
+			},
+			{
+				"t": 2013,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.746
+			},
+			{
+				"t": 2013,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 9.411
+			},
+			{
+				"t": 2013,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.583
+			},
+			{
+				"t": 2013,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 26.705
+			},
+			{
+				"t": 2014,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 31.293
+			},
+			{
+				"t": 2014,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.108
+			},
+			{
+				"t": 2014,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2014,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 24.656
+			},
+			{
+				"t": 2014,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.572
+			},
+			{
+				"t": 2014,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.313
+			},
+			{
+				"t": 2014,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.668
+			},
+			{
+				"t": 2014,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.583
+			},
+			{
+				"t": 2014,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 26.705
+			},
+			{
+				"t": 2015,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 31.391
+			},
+			{
+				"t": 2015,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 10.108
+			},
+			{
+				"t": 2015,
+				"j": "pecans",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 0.25
+			},
+			{
+				"t": 2015,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 25.503
+			},
+			{
+				"t": 2015,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 19.572
+			},
+			{
+				"t": 2015,
+				"j": "veges",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 4.313
+			},
+			{
+				"t": 2015,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EBID_u_f",
+				"value": 16.493
+			},
+			{
+				"t": 2015,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "EPID_u_f",
+				"value": 4.583
+			},
+			{
+				"t": 2015,
+				"j": "forage",
+				"k": "flood",
+				"aguse": "MXID_u_f",
+				"value": 24.269
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Agricultural Average Costs of Pumping Ground Water",
+		"paramName": "ag_av_gw_cost_p",
+		"paramDescription": "Average irrigation costs of pumping ground water",
+		"paramDefaultSource": "Elephant Butte Irrigation District consultant Phil King, NMSU March 2013",
+		"paramCategory": "Agriculture",
+		"paramUnit": "USD/AF",
+		"maxValue": 100,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "scenario",
+		"structType": "scalar",
+		"paramDefaultValue": 90,
+		"paramValue": 90
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Water Price Elastacity of Demand",
+		"paramName": "elast_p",
+		"paramDescription": "A measure of the relationship between a change in the quantity of water demanded and a change in its price",
+		"paramDefaultSource": "El Paso water study (fullerton): http://www.waterrf.org/resources/Lists/ProjectPapers/Attachments/61/4501_ProjectPaper.pdf, no las cruces or Juarez MX elasticity estimates available to date",
+		"paramCategory": "Urban",
+		"paramUnit": "n/a",
+		"maxValue": 1,
+		"minValue": -1,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": -0.32
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": -0.32
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": -0.32
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": -0.32
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": -0.32
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": -0.32
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Price of Water",
+		"paramName": "urb_price_p",
+		"paramDescription": "Observed Historical Urban Price of Water",
+		"paramDefaultSource": "El paso water utilities pricing source Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+		"paramCategory": "Urban",
+		"paramUnit": "1000 USD/1000 AF",
+		"maxValue": 2000,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 851.14
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 851.14
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Water Deliveries",
+		"paramName": "urb_use_p",
+		"paramDescription": "Observed Historical Urban Water Deliveries",
+		"paramDefaultSource": "http://www.wrri.nmsu.edu/publish/techrpt/tr356/tr356.pdf, http://www.epwu.org/water/water_resources.html",
+		"paramCategory": "Urban",
+		"paramUnit": "KaF/yr",
+		"maxValue": 300,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 19.71
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 118.5
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 118.5
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 19.71
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 118.5
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 118.5
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Cost of Supply",
+		"paramName": "urb_Av_cost0_p",
+		"paramDescription": "Urban cost of supply per unit delivered to the home",
+		"paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+		"paramCategory": "Urban",
+		"paramUnit": "USD/AF",
+		"maxValue": 2000,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 851.14
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 851.14
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 851.14
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Average Cost Growth Rate",
+		"paramName": "urb_cost_grow_p",
+		"paramDescription": "Urban average cost growth rate",
+		"paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+		"paramCategory": "Urban",
+		"paramUnit": "prop/yr",
+		"maxValue": 0.2,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "user",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0.02
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 0.02
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0.02
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0.02
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 0.02
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0.02
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Texas proportion of San Marcial Flows",
+		"paramName": "tx_proj_op_p",
+		"paramDescription": "Texas proportion of San Marcial Flows according to the 2008 Project Operating Agreement",
+		"paramDefaultSource": "http://www.houstonchronicle.com/news/texas/article/Feds-issue-decision-on-operating-plan-for-Rio-10839313.php",
+		"paramCategory": "Policies",
+		"paramUnit": "prop",
+		"maxValue": 1,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structType": "scalar",
+		"paramDefaultValue": 0.43,
+		"paramValue": 0.43
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Ending Proportion of Starting Ground Water Storage",
+		"paramName": "gw_sustain_p",
+		"paramDescription": "Ending Proportion of Starting Ground Water Storage",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "prop",
+		"maxValue": 1,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 1
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 1
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 1
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 1
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Average Pumping Cost Growth Rate",
+		"paramName": "urb_gw_cost_grow_p",
+		"paramDescription": "Urban Average Pumping Cost Growth Rate",
+		"paramDefaultSource": "",
+		"paramCategory": "Urban",
+		"paramUnit": "prop/yr",
+		"maxValue": 0.2,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "user",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramName": "pop0_p",
+		"paramLabel": "Initial Number of Urban Water Buying Households",
+		"paramCategory": "Urban",
+		"paramDescription": "Initial Number of Urban Water Buying Households",
+		"paramUnit": "1000",
+		"paramDefaultSource": "http://www.epwu.org/water/water_resources.html, http://www.epwu.org/water/water_stats.html",
+		"maxValue": 500,
+		"minValue": 0,
+		"structType": "table",
+		"structDimension": "1",
+		"dataType": "double",
+		"definitionType": "user",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 32.303
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 194.212
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 194.212
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 32.303
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 194.212
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 194.212
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Water Buying Households Growth Rate",
+		"paramName": "rho_pop_p",
+		"paramDescription": "Percentage growth per year of urban water users as households",
+		"paramDefaultSource": "http://www.epwu.org/water/water_resources.html, http://www.wrri.nmsu.edu/publish/techrpt/tr356/tr356.pdf",
+		"paramCategory": "Urban",
+		"paramUnit": "prop/yr",
+		"maxValue": 0.04,
+		"minValue": -0.02,
+		"dataType": "double",
+		"definitionType": "user",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0.019
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 0.02
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0.02
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0.019
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 0.02
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0.02
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Average Pumping Cost",
+		"paramName": "urb_av_gw_cost0_p",
+		"paramDescription": "Average cost of  urban aquifer pumping excluding treatment",
+		"paramDefaultSource": "http://www.epwu.org/water/water_resources.html",
+		"paramCategory": "Urban",
+		"paramUnit": "1000 USD",
+		"maxValue": 200,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 30
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 30
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 30
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 30
+			},
+			{
+				"miuse": "epmi_u_f",
+				"value": 30
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 30
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Pumping Capacity",
+		"paramName": "urb_gw_pump_capacity_p",
+		"paramDescription": "Urban Pumping Capacity",
+		"paramDefaultSource": "http://www.epwu.org/water/water_resources.html",
+		"paramCategory": "Urban",
+		"paramUnit": "KAF/yr",
+		"maxValue": 100,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "scenario",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "LCMI_u_f",
+				"value": 40
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "EPMI_u_f",
+				"value": 12
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "MXMI_u_f",
+				"value": 12
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "EPMI_u_f",
+				"value": 60
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "MXMI_u_f",
+				"value": 60
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "LCMI_u_f",
+				"value": 40
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "EPMI_u_f",
+				"value": 12
+			},
+			{
+				"aqf": "Mesilla_aqf_s",
+				"miuse": "MXMI_u_f",
+				"value": 12
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "EPMI_u_f",
+				"value": 60
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"miuse": "MXMI_u_f",
+				"value": 60
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Observed US-Mexico 1906 Treaty Flows at Acequia Madre",
+		"paramName": "us_mx_1906_p",
+		"paramDescription": "Observed US-Mexico 1906 Treaty Flows at Acequia Madre",
+		"paramDefaultSource": "https://en.wikipedia.org/wiki/International_Diversion_Dam",
+		"paramCategory": "Policies",
+		"paramUnit": "1000 AF/yr",
+		"maxValue": 100,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 60.188
+			},
+			{
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 60.188
+			},
+			{
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 63.641
+			},
+			{
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 63.641
+			},
+			{
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 60.085
+			},
+			{
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 60.085
+			},
+			{
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 59.463
+			},
+			{
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 59.463
+			},
+			{
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 60.65
+			},
+			{
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 60.65
+			},
+			{
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 58.329
+			},
+			{
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 58.329
+			},
+			{
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 60.633
+			},
+			{
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 60.633
+			},
+			{
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 61.059
+			},
+			{
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 61.059
+			},
+			{
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 60.346
+			},
+			{
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 60.346
+			},
+			{
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 26.958
+			},
+			{
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 26.958
+			},
+			{
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 27.623
+			},
+			{
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 27.623
+			},
+			{
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 58.111
+			},
+			{
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 58.111
+			},
+			{
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 27.127
+			},
+			{
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 27.127
+			},
+			{
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 51.263
+			},
+			{
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 51.263
+			},
+			{
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 53.703
+			},
+			{
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 53.703
+			},
+			{
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 57.746
+			},
+			{
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 57.746
+			},
+			{
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 56.404
+			},
+			{
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 56.404
+			},
+			{
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 25.735
+			},
+			{
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 25.735
+			},
+			{
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 23.079
+			},
+			{
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 23.079
+			},
+			{
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 3.766
+			},
+			{
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 3.766
+			},
+			{
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 12.948
+			},
+			{
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 12.948
+			},
+			{
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 33.413
+			},
+			{
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 33.413
+			}
+		],
+		"paramValue": [
+			{
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 60.188
+			},
+			{
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 60.188
+			},
+			{
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 63.641
+			},
+			{
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 63.641
+			},
+			{
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 60.085
+			},
+			{
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 60.085
+			},
+			{
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 59.463
+			},
+			{
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 59.463
+			},
+			{
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 60.65
+			},
+			{
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 60.65
+			},
+			{
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 58.329
+			},
+			{
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 58.329
+			},
+			{
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 60.633
+			},
+			{
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 60.633
+			},
+			{
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 61.059
+			},
+			{
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 61.059
+			},
+			{
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 60.346
+			},
+			{
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 60.346
+			},
+			{
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 26.958
+			},
+			{
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 26.958
+			},
+			{
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 27.623
+			},
+			{
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 27.623
+			},
+			{
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 58.111
+			},
+			{
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 58.111
+			},
+			{
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 27.127
+			},
+			{
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 27.127
+			},
+			{
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 51.263
+			},
+			{
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 51.263
+			},
+			{
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 53.703
+			},
+			{
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 53.703
+			},
+			{
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 57.746
+			},
+			{
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 57.746
+			},
+			{
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 56.404
+			},
+			{
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 56.404
+			},
+			{
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 25.735
+			},
+			{
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 25.735
+			},
+			{
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 23.079
+			},
+			{
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 23.079
+			},
+			{
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 3.766
+			},
+			{
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 3.766
+			},
+			{
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 12.948
+			},
+			{
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 12.948
+			},
+			{
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 33.413
+			},
+			{
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 33.413
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Annual Water Inflows at San Marcial Gauge",
+		"paramName": "sourc_p",
+		"paramDescription": "Annual Water Inflows at San Marcial Gauge",
+		"paramDefaultSource": "Historical or forecast headwater node flows",
+		"paramCategory": "Climate",
+		"paramUnit": "1000 AF/yr",
+		"maxValue": 2000,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "scenario",
+		"structDimension": "3",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 1146
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 114.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 1400
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 140
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 446
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 44.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 1146
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 114.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 769
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 76.9
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 866
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 86.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 431
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 43.1
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 441
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 44.1
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 241
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 24.1
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 202
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 20.2
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 407
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 40.7
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 969
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 96.9
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 597
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 59.7
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 515
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 51.5
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 933
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 93.3
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 696
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 69.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 542
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 54.2
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 308
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 30.8
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 288
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 28.8
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 302
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 30.2
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 339
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 33.9
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 402
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 40.2
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			}
+		],
+		"paramValue": [
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 1146
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 114.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 1400
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 140
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 446
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 44.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 1146
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 114.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 769
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 76.9
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 866
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 86.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 431
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 43.1
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 441
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 44.1
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 241
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 24.1
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 202
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 20.2
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 407
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 40.7
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 969
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 96.9
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 597
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 59.7
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 515
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 51.5
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 933
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 93.3
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 696
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 69.6
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 542
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 54.2
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 308
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 30.8
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 288
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 28.8
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 302
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 30.2
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 339
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 33.9
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 402
+			},
+			{
+				"inflow": "Marcial_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 40.2
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_Caballo_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_El_Paso_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_above_MX_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_MX_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1994,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1994,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1995,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1995,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1996,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1996,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1997,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1997,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1998,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1998,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1999,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 1999,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2000,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2000,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2001,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2001,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2002,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2002,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2003,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2003,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2004,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2004,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2005,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2005,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2006,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2006,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2007,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2007,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2008,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2008,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2009,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2009,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2010,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2010,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2011,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2011,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2012,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2012,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2013,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2013,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2014,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2014,
+				"w": "2-w_supl_new",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2015,
+				"w": "1-w_supl_base",
+				"value": 0
+			},
+			{
+				"inflow": "WS_below_EPID_h_f",
+				"t": 2015,
+				"w": "2-w_supl_new",
+				"value": 0
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Annual Gauged Streamflows",
+		"paramName": "gaugeflow_p",
+		"paramDescription": "Annual auged streamflows at selected gauges",
+		"paramDefaultSource": "http://www.ibwc.state.gov/water_data/histflo1.htm , https://waterdata.usgs.gov/nwis/annual?referred_module=sw&search_site_no=08362500&format=sites_selection_links    march 6 2017 ",
+		"paramCategory": "Climate",
+		"paramUnit": "1000 AF",
+		"maxValue": 1000,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "static",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1994,
+				"value": 820
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1995,
+				"value": 820
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1996,
+				"value": 820
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1997,
+				"value": 763
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1998,
+				"value": 817
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1999,
+				"value": 728
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2000,
+				"value": 756
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2001,
+				"value": 791
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2002,
+				"value": 802
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2003,
+				"value": 389
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2004,
+				"value": 398
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2005,
+				"value": 654
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2006,
+				"value": 444
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2007,
+				"value": 611
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2008,
+				"value": 670
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2009,
+				"value": 725
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2010,
+				"value": 665
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2011,
+				"value": 403
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2012,
+				"value": 371
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2013,
+				"value": 168
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2014,
+				"value": 400
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2015,
+				"value": 400
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1994,
+				"value": 509
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1995,
+				"value": 702
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1996,
+				"value": 447
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1997,
+				"value": 483
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1998,
+				"value": 457
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1999,
+				"value": 457
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2000,
+				"value": 433
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2001,
+				"value": 453
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2002,
+				"value": 474
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2003,
+				"value": 172
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2004,
+				"value": 187
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2005,
+				"value": 330
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2006,
+				"value": 279
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2007,
+				"value": 338
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2008,
+				"value": 378
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2009,
+				"value": 382
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2010,
+				"value": 364
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2011,
+				"value": 230
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2012,
+				"value": 133
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2013,
+				"value": 57
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2014,
+				"value": 105
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2015,
+				"value": 171
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1994,
+				"value": 820
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1995,
+				"value": 820
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1996,
+				"value": 820
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1997,
+				"value": 763
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1998,
+				"value": 817
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1999,
+				"value": 728
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2000,
+				"value": 756
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2001,
+				"value": 791
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2002,
+				"value": 802
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2003,
+				"value": 389
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2004,
+				"value": 398
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2005,
+				"value": 654
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2006,
+				"value": 444
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2007,
+				"value": 611
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2008,
+				"value": 670
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2009,
+				"value": 725
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2010,
+				"value": 665
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2011,
+				"value": 403
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2012,
+				"value": 371
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2013,
+				"value": 168
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2014,
+				"value": 400
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2015,
+				"value": 400
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1994,
+				"value": 820
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1995,
+				"value": 820
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1996,
+				"value": 820
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1997,
+				"value": 763
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1998,
+				"value": 817
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1999,
+				"value": 728
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2000,
+				"value": 756
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2001,
+				"value": 791
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2002,
+				"value": 802
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2003,
+				"value": 389
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2004,
+				"value": 398
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2005,
+				"value": 654
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2006,
+				"value": 444
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2007,
+				"value": 611
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2008,
+				"value": 670
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2009,
+				"value": 725
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2010,
+				"value": 665
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2011,
+				"value": 403
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2012,
+				"value": 371
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2013,
+				"value": 168
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2014,
+				"value": 400
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2015,
+				"value": 400
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1994,
+				"value": 205
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1995,
+				"value": 410
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1996,
+				"value": 168
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1997,
+				"value": 177
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1998,
+				"value": 174
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1999,
+				"value": 189
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2000,
+				"value": 140
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2001,
+				"value": 138
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2002,
+				"value": 161
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2003,
+				"value": 33
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2004,
+				"value": 63
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2005,
+				"value": 111
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2006,
+				"value": 151
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2007,
+				"value": 125
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2008,
+				"value": 139
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2009,
+				"value": 110
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2010,
+				"value": 123
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2011,
+				"value": 31
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2012,
+				"value": 8
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2013,
+				"value": 6
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2014,
+				"value": 11
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2015,
+				"value": 12
+			}
+		],
+		"paramValue": [
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1994,
+				"value": 820
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1995,
+				"value": 820
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1996,
+				"value": 820
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1997,
+				"value": 763
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1998,
+				"value": 817
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 1999,
+				"value": 728
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2000,
+				"value": 756
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2001,
+				"value": 791
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2002,
+				"value": 802
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2003,
+				"value": 389
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2004,
+				"value": 398
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2005,
+				"value": 654
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2006,
+				"value": 444
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2007,
+				"value": 611
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2008,
+				"value": 670
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2009,
+				"value": 725
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2010,
+				"value": 665
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2011,
+				"value": 403
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2012,
+				"value": 371
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2013,
+				"value": 168
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2014,
+				"value": 400
+			},
+			{
+				"river": "RG_Caballo_out_v_f",
+				"t": 2015,
+				"value": 400
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1994,
+				"value": 509
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1995,
+				"value": 702
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1996,
+				"value": 447
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1997,
+				"value": 483
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1998,
+				"value": 457
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 1999,
+				"value": 457
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2000,
+				"value": 433
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2001,
+				"value": 453
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2002,
+				"value": 474
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2003,
+				"value": 172
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2004,
+				"value": 187
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2005,
+				"value": 330
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2006,
+				"value": 279
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2007,
+				"value": 338
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2008,
+				"value": 378
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2009,
+				"value": 382
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2010,
+				"value": 364
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2011,
+				"value": 230
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2012,
+				"value": 133
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2013,
+				"value": 57
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2014,
+				"value": 105
+			},
+			{
+				"river": "RG_El_Paso_v_f",
+				"t": 2015,
+				"value": 171
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1994,
+				"value": 820
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1995,
+				"value": 820
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1996,
+				"value": 820
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1997,
+				"value": 763
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1998,
+				"value": 817
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 1999,
+				"value": 728
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2000,
+				"value": 756
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2001,
+				"value": 791
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2002,
+				"value": 802
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2003,
+				"value": 389
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2004,
+				"value": 398
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2005,
+				"value": 654
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2006,
+				"value": 444
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2007,
+				"value": 611
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2008,
+				"value": 670
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2009,
+				"value": 725
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2010,
+				"value": 665
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2011,
+				"value": 403
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2012,
+				"value": 371
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2013,
+				"value": 168
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2014,
+				"value": 400
+			},
+			{
+				"river": "RG_above_MX_v_f",
+				"t": 2015,
+				"value": 400
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1994,
+				"value": 820
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1995,
+				"value": 820
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1996,
+				"value": 820
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1997,
+				"value": 763
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1998,
+				"value": 817
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 1999,
+				"value": 728
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2000,
+				"value": 756
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2001,
+				"value": 791
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2002,
+				"value": 802
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2003,
+				"value": 389
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2004,
+				"value": 398
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2005,
+				"value": 654
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2006,
+				"value": 444
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2007,
+				"value": 611
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2008,
+				"value": 670
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2009,
+				"value": 725
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2010,
+				"value": 665
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2011,
+				"value": 403
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2012,
+				"value": 371
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2013,
+				"value": 168
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2014,
+				"value": 400
+			},
+			{
+				"river": "RG_below_MX_v_f",
+				"t": 2015,
+				"value": 400
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1994,
+				"value": 205
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1995,
+				"value": 410
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1996,
+				"value": 168
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1997,
+				"value": 177
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1998,
+				"value": 174
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 1999,
+				"value": 189
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2000,
+				"value": 140
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2001,
+				"value": 138
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2002,
+				"value": 161
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2003,
+				"value": 33
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2004,
+				"value": 63
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2005,
+				"value": 111
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2006,
+				"value": 151
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2007,
+				"value": 125
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2008,
+				"value": 139
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2009,
+				"value": 110
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2010,
+				"value": 123
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2011,
+				"value": 31
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2012,
+				"value": 8
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2013,
+				"value": 6
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2014,
+				"value": 11
+			},
+			{
+				"river": "RG_below_EPID_v_f",
+				"t": 2015,
+				"value": 12
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Initial Project Storage Level",
+		"paramName": "z0_p",
+		"paramDescription": "Initial reservoir levels at reservoir stock nodes",
+		"paramDefaultSource": "https://pubs.usgs.gov/wdr/1996/nm-96-1/report.pdf",
+		"paramCategory": "Storage",
+		"paramUnit": "1000 AF",
+		"maxValue": 2544,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"p": "1-policy_hist",
+				"res": "Store_res_s",
+				"value": 2204.7
+			},
+			{
+				"p": "2-policy_base",
+				"res": "Store_res_s",
+				"value": 2204.7
+			},
+			{
+				"p": "3-policy_new",
+				"res": "Store_res_s",
+				"value": 2204.7
+			}
+		],
+		"paramValue": [
+			{
+				"p": "1-policy_hist",
+				"res": "Store_res_s",
+				"value": 2204.7
+			},
+			{
+				"p": "2-policy_base",
+				"res": "Store_res_s",
+				"value": 2204.7
+			},
+			{
+				"p": "3-policy_new",
+				"res": "Store_res_s",
+				"value": 2204.7
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Reservoir Storage Capacity",
+		"paramName": "zmax_p",
+		"paramDescription": "Maximum reservoir storage capacity",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "KAF",
+		"maxValue": 5000,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "scenario",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"res": "store_res_s",
+				"value": 2544
+			}
+		],
+		"paramValue": [
+			{
+				"res": "store_res_s",
+				"value": 2544
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Rio Grande Project Storage by year",
+		"paramName": "z_p",
+		"paramDescription": "Rio Grande Project Storage by year (EB + Caballo)",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "KAF",
+		"maxValue": 3000,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"u": "Store_res_s",
+				"t": 1994,
+				"value": 2107.43
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1995,
+				"value": 2123.07
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1996,
+				"value": 2201.49
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1997,
+				"value": 1759.868
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1998,
+				"value": 1970.196
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1999,
+				"value": 1739.597
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2000,
+				"value": 1750.483
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2001,
+				"value": 1327.898
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2002,
+				"value": 923.123
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2003,
+				"value": 387.541
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2004,
+				"value": 221.66
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2005,
+				"value": 216.63
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2006,
+				"value": 444.31
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2007,
+				"value": 557.17
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2008,
+				"value": 432.54
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2009,
+				"value": 670.16
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2010,
+				"value": 549.164
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2011,
+				"value": 459.219
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2012,
+				"value": 297.584
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2013,
+				"value": 168.601
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2014,
+				"value": 318.805
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2015,
+				"value": 288.798
+			}
+		],
+		"paramValue": [
+			{
+				"u": "Store_res_s",
+				"t": 1994,
+				"value": 2107.43
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1995,
+				"value": 2123.07
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1996,
+				"value": 2201.49
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1997,
+				"value": 1759.868
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1998,
+				"value": 1970.196
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1999,
+				"value": 1739.597
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2000,
+				"value": 1750.483
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2001,
+				"value": 1327.898
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2002,
+				"value": 923.123
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2003,
+				"value": 387.541
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2004,
+				"value": 221.66
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2005,
+				"value": 216.63
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2006,
+				"value": 444.31
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2007,
+				"value": 557.17
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2008,
+				"value": 432.54
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2009,
+				"value": 670.16
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2010,
+				"value": 549.164
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2011,
+				"value": 459.219
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2012,
+				"value": 297.584
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2013,
+				"value": 168.601
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2014,
+				"value": 318.805
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2015,
+				"value": 288.798
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Observed Predicted Storage by year",
+		"paramName": "residdd_p",
+		"paramDescription": "Observed Predicted Storage by year",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "1000 AF",
+		"maxValue": 1000,
+		"minValue": -10000,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "2",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"u": "Store_res_s",
+				"t": 1994,
+				"value": 0
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1995,
+				"value": 0
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1996,
+				"value": 0
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1997,
+				"value": -446.17
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1998,
+				"value": 307.4
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1999,
+				"value": -199.2
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2000,
+				"value": 482.28
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2001,
+				"value": -3.7
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2002,
+				"value": 251.5
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2003,
+				"value": -312.86
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2004,
+				"value": -122.12
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2005,
+				"value": -288.35
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2006,
+				"value": 232.1
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2007,
+				"value": 131.81
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2008,
+				"value": -322.4
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2009,
+				"value": 315.55
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2010,
+				"value": 62.04
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2011,
+				"value": 49.87
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2012,
+				"value": -58.51
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2013,
+				"value": -207.26
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2014,
+				"value": 215.73
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2015,
+				"value": 2.6
+			}
+		],
+		"paramValue": [
+			{
+				"u": "Store_res_s",
+				"t": 1994,
+				"value": 0
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1995,
+				"value": 0
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1996,
+				"value": 0
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1997,
+				"value": -446.17
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1998,
+				"value": 307.4
+			},
+			{
+				"u": "Store_res_s",
+				"t": 1999,
+				"value": -199.2
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2000,
+				"value": 482.28
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2001,
+				"value": -3.7
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2002,
+				"value": 251.5
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2003,
+				"value": -312.86
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2004,
+				"value": -122.12
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2005,
+				"value": -288.35
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2006,
+				"value": 232.1
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2007,
+				"value": 131.81
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2008,
+				"value": -322.4
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2009,
+				"value": 315.55
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2010,
+				"value": 62.04
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2011,
+				"value": 49.87
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2012,
+				"value": -58.51
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2013,
+				"value": -207.26
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2014,
+				"value": 215.73
+			},
+			{
+				"u": "Store_res_s",
+				"t": 2015,
+				"value": 2.6
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Initial Aquifer Level",
+		"paramName": "q0_p",
+		"paramDescription": "Aquifer Starting Storage Level",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "1000 AF",
+		"maxValue": 70000,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 45000
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 7000
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 45000
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 7000
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Aquifer Storage Capacity",
+		"paramName": "qmax_p",
+		"paramDescription": "Storage capacity by aquifer",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "KAF",
+		"maxValue": 100000,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 50000
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 9000
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 50000
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 9000
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Land Area Overlying Aquifer",
+		"paramName": "aq_area_p",
+		"paramDescription": "Land Area Overlying Aquifer",
+		"paramDefaultSource": "",
+		"paramCategory": "Storage",
+		"paramUnit": "1000 ac",
+		"maxValue": 2000,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 704
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 1600
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 704
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 1600
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Annual Mountain Front Aquifer Recharge",
+		"paramName": "recharge_p",
+		"paramDescription": "Annual mountain front aquifer recharge",
+		"paramDefaultSource": "http://www.wrri.nmsu.edu/publish/techrpt/abstracts/abs332.html, https://pubs.usgs.gov/wri/wri02-4108/pdf/wrir02-4108.pdf",
+		"paramCategory": "Storage",
+		"paramUnit": "1000 AF/yr",
+		"maxValue": 20,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 10.8
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 10.94
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 10.8
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 10.94
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Average Aquifer Porosity",
+		"paramName": "porosity_p",
+		"paramDescription": "Average Aquifer Porosity",
+		"paramDefaultSource": "http://www.wrri.nmsu.edu/publish/techrpt/abstracts/abs332.html, https://pubs.usgs.gov/wri/wri02-4108/pdf/wrir02-4108.pdf",
+		"paramCategory": "Storage",
+		"paramUnit": "n/a",
+		"maxValue": 0.2,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 0.1
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 0.178
+			}
+		],
+		"paramValue": [
+			{
+				"aqf": "Mesilla_aqf_s",
+				"value": 0.1
+			},
+			{
+				"aqf": "Hueco_aqf_s",
+				"value": 0.178
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Reservoir Precipitation Rate",
+		"paramName": "precip_rat_p",
+		"paramDescription": "Reservoir precipitation rate - feet gained per exposed acre per year",
+		"paramDefaultSource": "Historic precipitation data near Truth or Consequences NM",
+		"paramCategory": "Climate",
+		"paramUnit": "ft/yr",
+		"maxValue": 10,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structType": "scalar",
+		"paramDefaultValue": 0.97,
+		"paramValue": 0.97
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Reservoir Evaporation Rate",
+		"paramName": "Evap_rate_p",
+		"paramDescription": "Reservoir evaporation rate - feet lost per exposed acre",
+		"paramDefaultSource": "Source selected New Mexico water reports",
+		"paramCategory": "Climate",
+		"paramUnit": "ft/yr",
+		"maxValue": 10,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structType": "scalar",
+		"paramDefaultValue": 7.682,
+		"paramValue": 7.682
+	},
+	{
+		"modelID": "004",
+		"paramCategory": "Agriculture",
+		"paramDescription": "Developed Land Area per irrigation district",
+		"paramDefaultSource": "",
+		"paramUnit": "1000 ac",
+		"maxValue": 100,
+		"minValue": 0,
+		"dataType": "integer",
+		"paramLabel": "Developed Land Area by ID",
+		"paramName": "LANDRHS_p",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aguse": "EBID_u_f",
+				"value": 90
+			},
+			{
+				"aguse": "EPID_u_f",
+				"value": 55
+			},
+			{
+				"aguse": "MXID_u_f",
+				"value": 50
+			}
+		],
+		"paramValue": [
+			{
+				"aguse": "EBID_u_f",
+				"value": 90
+			},
+			{
+				"aguse": "EPID_u_f",
+				"value": 55
+			},
+			{
+				"aguse": "MXID_u_f",
+				"value": 50
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Surface Water Treatment Capacity",
+		"paramName": "SW_Treat_capac_p",
+		"paramDescription": "Urban Surface water treatment capacity by city",
+		"paramDefaultSource": "http://www.epwu.org/water/hueco_bolson/2.0ElPasoWaterSupply.pdf",
+		"paramCategory": "Urban",
+		"paramUnit": "1000 AF",
+		"maxValue": 100,
+		"minValue": 0,
+		"dataType": "integer",
+		"definitionType": "scenario",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 60
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 60
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 60
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 60
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Proportion of agricultural water pumped recharging pumped aquifer",
+		"paramName": "Bag_pump_aqf_return_p",
+		"paramDescription": "Proportion of agricultural water pumped recharging pumped aquifer",
+		"paramDefaultSource": "",
+		"paramCategory": "Agriculture",
+		"paramUnit": "prop",
+		"maxValue": 1,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "scenario",
+		"structDimension": "3",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 0.2
+			}
+		],
+		"paramValue": [
+			{
+				"aguse": "EBID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EBID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "MXID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "pecans",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "veges",
+				"k": "flood",
+				"value": 0.2
+			},
+			{
+				"aguse": "EPID_u_f",
+				"j": "forage",
+				"k": "flood",
+				"value": 0.2
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Urban Backstop Technology Costs",
+		"paramName": "urb_av_back_cost0_p",
+		"paramDescription": "Urban backstop technology costs including treatment approximate cost of imported water as of 2017",
+		"paramDefaultSource": "https://wrrc.arizona.edu/awr/s11/financing",
+		"paramCategory": "Urban",
+		"paramUnit": "n/a",
+		"maxValue": 3000,
+		"minValue": 0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 1500
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 1500
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 1500
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 1500
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 1500
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 1500
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Growth in Urban Backstop Technology Costs",
+		"paramName": "urb_back_cost_grow_p",
+		"paramDescription": "Growth in urban backstop technology costs prortion per year (may fall)",
+		"paramDefaultSource": "",
+		"paramCategory": "Urban",
+		"paramUnit": "prop",
+		"maxValue": 1,
+		"minValue": -1,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "MXMI_u_f",
+				"value": 0
+			}
+		]
+	},
+	{
+		"modelID": "004",
+		"paramLabel": "Proportion of urban water from backstop technology recharging aquifer",
+		"paramName": "Burb_back_aqf_rch_p",
+		"paramDescription": "Proportion of urban water from backstop technology recharging aquifer",
+		"paramDefaultSource": "",
+		"paramCategory": "Urban",
+		"paramUnit": "prop",
+		"maxValue": 1.0,
+		"minValue": -1.0,
+		"dataType": "double",
+		"definitionType": "static",
+		"structDimension": "1",
+		"structType": "table",
+		"paramDefaultValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 0
+			}
+		],
+		"paramValue": [
+			{
+				"miuse": "LCMI_u_f",
+				"value": 0
+			},
+			{
+				"miuse": "EPMI_u_f",
+				"value": 0
+			}
+		]
+	}
+],
+    "modelOutputs": [
+	{
+		"varName": "evaporation",
+		"varLabel": "Evaporation Rate",
+		"varType": "outParam",
+		"varCategory": "Storage",
+		"varDescription": "Reservoir surface evaporation by period",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "water_flows",
+		"varLabel": "Water Flows",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "Water flows by period",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "water_stocks",
+		"varLabel": "Water Stocks",
+		"varType": "outParam",
+		"varCategory": "Storage",
+		"varDescription": "Reservoir water storage",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "river_flows",
+		"varLabel": "River Flows",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "River Flows",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "tot_ben",
+		"varLabel": "Total Agricultural Benefits by Period",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Sum of farm benefits over region",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "diversions",
+		"varLabel": "Water Diversions",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "Water Diversions",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "SWacres",
+		"varLabel": "Surface Irrigated Land in Production",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Surface irrigated land in production",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "GWacres",
+		"varLabel": "Aquifer Irrigated Land in Production",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Aquifer irrigated land in production",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "surf_use",
+		"varLabel": "Surface Water Use",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Surface Water Use",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "r_return_o",
+		"varLabel": "Return Flows from river to river",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "Return Flows from river to river",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "urb_price",
+		"varLabel": "Urban Price",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Urban water price",
+		"varUnit": "USD/AF"
+	},
+	{
+		"varName": "urb_con_surp",
+		"varLabel": "Urban Consumer Surplus",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Difference between what customer is willing to pay to what he has to pay",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "urb_use_p_cap",
+		"varLabel": "Urban Use per Capita",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Total urban use divided by total customer households",
+		"varUnit": "AF/Person"
+	},
+	{
+		"varName": "ag_ben",
+		"varLabel": "Agricultural Benefits",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Net income over crops by farming region and year",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "ag_value",
+		"varLabel": "Agricultural Net Benefits by Crop",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Agricultural net economic value (total profitability)",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "ag_ben",
+		"varLabel": "Agricultural Benefits",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Net income over crops by farming region and year",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "ag_m_value",
+		"varLabel": "Agricultural Marginal Value of Water",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Farm price of water plus scarcity value",
+		"varUnit": "USD/AF"
+	},
+	{
+		"varName": "yield",
+		"varLabel": "Crop Yield",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Yield by crop and technology",
+		"varUnit": "tons/ac"
+	},
+	{
+		"varName": "ag_sw_use",
+		"varLabel": "Agricultural Surface Water Use",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Agricultural Surface Water Use by period",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "urb_pump",
+		"varLabel": "Urban Water Pumping",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Urban water pumping from aquifer",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "urb_sw_use",
+		"varLabel": "Urban Surface Water Use",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Urban water use from surface water",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "urb_revenue",
+		"varLabel": "Urban Revenue",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Price per acre feet multiplied by quantity supplied by the urban supplier",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "urb_gross_ben",
+		"varLabel": "Urban Gross Economic Benefit",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Revenue plus consumer surplus",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "urb_costs",
+		"varLabel": "Urban Costs of Production",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Total cost of urban supplied water",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "urb_value",
+		"varLabel": "Urban Total Net Benefit",
+		"varType": "outParam",
+		"varCategory": "Summary",
+		"varDescription": "Producer plus consumer surplus (urban gross benefits - cost of supply)",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "urb_value_af",
+		"varLabel": "Urban Net Value per Unit Water",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Urban economic benefits per acre foot",
+		"varUnit": "USD/ac-ft"
+	},
+	{
+		"varName": "urb_use",
+		"varLabel": "Urban Water Use",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Urban water use (surface diversions + pumping)",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "urb_m_value",
+		"varLabel": "Urban Marginal Value",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Marginal net benefit (price - marginal cost)",
+		"varUnit": "USD/ac-ft"
+	},
+	{
+		"varName": "surf_area",
+		"varLabel": "Total Surface Area by Period",
+		"varType": "outParam",
+		"varCategory": "Storage",
+		"varDescription": "Total Surface Area by Period",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "env_ben",
+		"varLabel": "Environmental Benefit from Flows",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "Environmental benefits by year (willingness to pay for environmental flows)",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "tot_ben",
+		"varLabel": "Total benefits over uses",
+		"varType": "outParam",
+		"varCategory": "Summary",
+		"varDescription": "Sum of total benefits over region and uses",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "dnpv_ben",
+		"varLabel": "Discounted net present value of benefits",
+		"varType": "outParam",
+		"varCategory": "Summary",
+		"varDescription": "Sum of total benefits over region, uses and time periods",
+		"varUnit": "1000 USD"
+	},
+	{
+		"varName": "rec_ben",
+		"varLabel": "Recreation Benefit",
+		"varType": "outParam",
+		"varCategory": "",
+		"varDescription": "Reservoir recreation benefits by year (willingness to pay for recreation values)",
+		"varUnit": "1000 USD/yr"
+	},
+	{
+		"varName": "tot_ag_pump",
+		"varLabel": "Total Agricultural Pumping",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Total agricultural pumping summed over crops and technology",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "gw_stocks",
+		"varLabel": "Groundwater Aquifer Stocks",
+		"varType": "outParam",
+		"varCategory": "Storage",
+		"varDescription": "Groundwater aquifer stocks by period",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "aquifer_depth",
+		"varLabel": "Groundwater Aquifer Depth",
+		"varType": "outParam",
+		"varCategory": "Storage",
+		"varDescription": "Groundwater Aquifer Depth",
+		"varUnit": "ft/yr"
+	},
+	{
+		"varName": "a_return_o",
+		"varLabel": "Agricultural return flows from river to aquifer",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "Surface return flow from agricultural river diversions that return to the aquifer",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "ag_pump_aq_rch",
+		"varLabel": "Agricultural return from pumping to aquifer",
+		"varType": "outParam",
+		"varCategory": "Flows",
+		"varDescription": "Agricultural pumping that contributes to aquifer recharge",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "precip",
+		"varLabel": "Total precipitation by period",
+		"varType": "outParam",
+		"varCategory": "Storage",
+		"varDescription": "Total precipitation by period",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "tacres",
+		"varLabel": "Total acreage by crop",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Total irrigated land in production summmed over crops and technologies",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "tswacres",
+		"varLabel": "Total surface water acreage",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Total Surface acreage",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "tgwacres",
+		"varLabel": "Total ground water acreage",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Total Groundwater acreage",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "ttacres",
+		"varLabel": "Total acreage",
+		"varType": "outParam",
+		"varCategory": "Agriculture",
+		"varDescription": "Sum of SW and GW acreage",
+		"varUnit": "Kac/yr"
+	},
+	{
+		"varName": "urb_back_use",
+		"varLabel": "Urban backstop technology use",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "rban water use from backstop technology",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "urb_back_aq_rch",
+		"varLabel": "Urban Return to Aquifer from Backstop Tech",
+		"varType": "outParam",
+		"varCategory": "Urban",
+		"varDescription": "Urban water use from backstop technology recharging the aquifer",
+		"varUnit": "KAF/yr"
+	},
+	{
+		"varName": "total_ag_ben",
+		"varLabel": "Total Agricultural Benefits",
+		"varType": "outParam",
+		"varCategory": "Summary",
+		"varDescription": "Total Agricultural Benefits",
+		"varUnit": "1000 USD"
+	}
+]
+} 

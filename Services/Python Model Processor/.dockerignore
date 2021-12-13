@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore vs code IDE folders
+.vscode/
+
+# Ignore docker compose file
+docker-compose.yml
+
+# Ignore git and cache folders
+.git
+.cache
+
+# Ignore markdown and text files
+*.md
+
+
+

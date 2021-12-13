@@ -1,0 +1,332 @@
+{
+  "baseScenario": "usual",
+  "modelInputs": {
+    "ag_gw_pump_capacity_p": {
+      "modelID": "002",
+      "paramName": "ag_gw_pump_capacity_p",
+      "paramLabel": "Agricultural pumping capacity",
+      "paramUnit": "n/a",
+      "paramDefaultValue": "5",
+      "paramDefaultSource": "Educated Guess",
+      "maxValue": "10",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": "5"
+    },
+    "ag_av_gw_cost_p": {
+      "modelID": "002",
+      "paramName": "ag_av_gw_cost_p",
+      "paramLabel": "Agricultural average costs of pumping ground water",
+      "paramUnit": "$USD/acre-ft",
+      "paramDefaultValue": "100",
+      "paramDefaultSource": "Educated Guess",
+      "maxValue": "100",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": "100"
+    },
+   "pop0_p": {
+      "modelID": "002",
+      "paramName": "pop0_p",
+      "paramLabel": "Urban Customers",
+      "paramUnit": "1000s",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "20.000"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "207.192"
+        }
+      ],
+      "paramDefaultSource": "Base year (2012) - http://www.epwu.org/whatsnew/pdf/Survey.pdf and http://www.abqjournal.com/479613/news/glitch-causes-billing-issue-for-1800-las-cruces-utility-customers.html",
+      "maxValue": "500",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "user",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "20.000"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "207.192"
+        }
+      ]
+    },
+        "Price_p": {
+      "modelID": "002",
+      "paramName": "Price_p",
+      "paramLabel": "Crop prices",
+      "paramUnit": "$USD/ton",
+
+      "paramDefaultValue": [
+        {
+          "j": "Pecans",
+          "value": "4560"
+        },
+        {
+          "j": "Veges",
+          "value": "300"
+        }
+      ],
+      "paramDefaultSource": "NMSU extension budgets",
+      "maxValue": "10000",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "j": "Pecans",
+          "value": "4560"
+        },
+        {
+          "j": "Veges",
+          "value": "300"
+        }
+      ]
+    },
+        "urb_av_cost0_p": {
+      "modelID": "002",
+      "paramName": "urb_av_cost0_p",
+      "paramLabel": "Urban Average Cost",
+      "paramUnit": "$USD/acre-ft",
+      "paramDefaultValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "851.14"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "851.14"
+        }
+      ],
+      "paramDefaultSource": "El Paso water utilities pricing Dec 28 2015: http://www.epwu.org/whatsnew/pdf/Survey.pdf",
+      "maxValue": "2000",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "1",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "miuse": "LCMI_u_f",
+          "value": "851.14"
+        },
+        {
+          "miuse": "epmi_u_f",
+          "value": "851.14"
+        }
+      ]
+    },
+    "source_p": {
+      "modelID": "002",
+      "paramName": "source_p",
+      "paramLabel": "Annual basin inflows at headwaters -- snowpack or rain",
+      "paramUnit": "1000 acre-feet/yr",
+      "paramDefaultValue": [
+        {
+          "inflow": "Marcial1_h_f",
+          "t": "1",
+          "value": "600"
+        },
+        {
+          "inflow": "Marcial1_h_f",
+          "t": "2",
+          "value": "900"
+        },
+        {
+          "inflow": "Marcial1_h_f",
+          "t": "3",
+          "value": "500"
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1",
+          "value": "0"
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2",
+          "value": "0"
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "3",
+          "value": "0"
+        }
+      ],
+      "paramDefaultSource": "Historical or forecast headwater node flows",
+      "maxValue": "1000",
+      "minValue": "0",
+      "structType": "table",
+      "structDimension": "2",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": [
+        {
+          "inflow": "Marcial1_h_f",
+          "t": "1",
+          "value": "600"
+        },
+        {
+          "inflow": "Marcial1_h_f",
+          "t": "2",
+          "value": "900"
+        },
+        {
+          "inflow": "Marcial1_h_f",
+          "t": "3",
+          "value": "500"
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "1",
+          "value": "0"
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "2",
+          "value": "0"
+        },
+        {
+          "inflow": "Wshed_1_h_f",
+          "t": "3",
+          "value": "0"
+        }
+      ]
+    },
+    "us_mx_1906_p": {
+      "modelID": "002",
+      "paramName": "us_mx_1906_p",
+      "paramLabel": "US-MX 1906 treaty flows",
+      "paramUnit": "1000 acre-feet/yr",
+      "paramDefaultValue": "60",
+      "paramDefaultSource": "https://en.wikipedia.org/wiki/International_Diversion_Dam",
+      "maxValue": "100",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "integer",
+      "definitionType": "scenario",
+      "paramValue": "30"
+    },
+    "tx_proj_op_p": {
+      "modelID": "002",
+      "paramName": "tx_proj_op_p",
+      "paramLabel": "Project operation tx proportion of nm tx water sharing",
+      "paramUnit": "Percentage",
+      "paramDefaultValue": "0.43",
+      "paramDefaultSource": "",
+      "maxValue": "1.00",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": "0.43"
+    },
+    "sw_sustain_p": {
+      "modelID": "002",
+      "paramName": "sw_sustain_p",
+      "paramLabel": "Terminal sustainability proportion of starting surface water storage",
+      "paramUnit": "Percentage",
+      "paramDefaultValue": "0.50",
+      "paramDefaultSource": "",
+      "maxValue": "1.00",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": "0.50"
+    },
+    "gw_sustain_p": {
+      "modelID": "002",
+      "paramName": "gw_sustain_p",
+      "paramLabel": "Terminal sustainability proportion of starting ground water storage",
+      "paramUnit": "Percentage",
+      "paramDefaultValue": "0.95",
+      "paramDefaultSource": "",
+      "maxValue": "1.00",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "scenario",
+      "paramValue": "0.95"
+    },
+    "BC_p": {
+      "modelID": "002",
+      "paramName": "BC_p",
+      "paramLabel": "Proportion downstream delivery under Rio Grande Compact",
+      "paramUnit": "Percentage",
+      "paramDefaultValue": "0.80",
+      "paramDefaultSource": "",
+      "maxValue": "1.00",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": "0.80"
+    },
+    "Evap_rate_p": {
+      "modelID": "002",
+      "paramName": "Evap_rate_p",
+      "paramLabel": "Reservoir evaporation (feet loss per exposed acre)",
+      "paramUnit": "feet/acre",
+      "paramDefaultValue": "10",
+      "paramDefaultSource": "",
+      "maxValue": "20",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "integer",
+      "definitionType": "static",
+      "paramValue": "10"
+    },
+    "B1_area_vol_p": {
+      "modelID": "002",
+      "paramName": "B1_area_vol_p",
+      "paramLabel": "Impact of changes in volume on changes in area",
+      "paramUnit": "acres/1000 acre-feet",
+      "paramDefaultValue": "0.015",
+      "paramDefaultSource": "",
+      "maxValue": "1.00",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": "0.015"
+    },
+    "B2_area_volsq_p": {
+      "modelID": "002",
+      "paramName": "B2_area_volsq_p",
+      "paramLabel": "Impact of changes in volume on changes in volume squared on changes in area",
+      "paramUnit": "acres/1000 acre-feet2",
+      "paramDefaultValue": "0.00",
+      "paramDefaultSource": "",
+      "maxValue": "1.00",
+      "minValue": "0",
+      "structType": "scalar",
+      "dataType": "double",
+      "definitionType": "static",
+      "paramValue": "0.00"
+    }
+  },
+  "modelSettings": [{
+    "modelID": "002"
+  }],
+  "name": "some name",
+  "description": "some description",
+  "isPublic": "true",
+  "baseClimateScenario": "average",
+  "id": "e013a4b1-aed1-4036-91cf-30dcd0d8005e",
+  "userid": "null",
+  "status": "queued"
+}

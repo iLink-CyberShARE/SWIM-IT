@@ -1,0 +1,18 @@
+version: '3.8'
+services:      
+  swim-wb-py: 
+    container_name: swim-wb-py
+    image: <docker_user>/swim-wb-py:latest
+    restart: always
+    environment:
+      # app environment
+      BOILERPLATE_ENV: 'prod'
+      # default database connection URLS for sqlalchemy
+      USER_DATABASE_URL: 'mysql://<user>:<password>@<address>:<port>/<dbname>' 
+      # model database url
+      MODEL_DATABASE_URL: 'mongodb://<user>:<password>@<address>:<port>/<dbname>?authSource=<authdb>'
+      # secret key
+      SECRET_KEY: '<secret key>'
+    ports:
+      # <host port> : <application port>
+      - '5000:5000'
