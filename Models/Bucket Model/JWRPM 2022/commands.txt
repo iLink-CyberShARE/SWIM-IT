@@ -1,0 +1,14 @@
+gdxxrw schedules.xls par=env_mul rng=A1:U41 cDim=1 rDim=1
+
+// For the huge excel file
+gdxxrw schedules-all-nf.xlsx par=env_mul rng=A1:HTK41 cDim=1 rDim=1
+
+//Command for 1-1000
+gdxxrw schedules-2001-3000.xlsx par=env_mul rng=A1:ALM31 cDim=1 rDim=1
+
+gdxxrw schedules-1-1000-20yr.xlsx par=env_mul rng=A1:ALM21 cDim=1 rDim=1
+
+
+gdxxrw schedules-1-300-30yr.xlsx par=env_mul rng=A1:KO31 cDim=1 rDim=1
+
+gdxxrw schedules-30yr.xlsx par=env_mul rng=A1:G31 cDim=1 rDim=1
