@@ -14,9 +14,6 @@ SWIM webservice wrapper for the python version of the MRG Water Balance Model ve
 > Localhost: swagger docs will be available at http://localhost:5000/swim-wb-py/docs/   
 > Docker composer: swagger docs will be available at http://xxxxxx:5000/swim-wb-py/docs/   
 
-### Live Open API
-A live Open API for the Water Balance Model 2.0 is available at: https://services.cybershare.utep.edu/swim-wb-py/docs/
-
 ## Contributors
 Lead Developer - Luis A. Garnica Chavira  
 
