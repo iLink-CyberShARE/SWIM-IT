@@ -26,7 +26,7 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 GNU GENERAL PUBLIC LICENSE  3.0
 
 ## Copyright
-© 2021 University of Texas at El Paso (SWIM Project) 
+© 2023 University of Texas at El Paso (SWIM Project) 
 
 ## Additional Documentation
 Water Balance 2.0: https://water.cybershare.utep.edu/resources/docs/en2/models/balancev2/
