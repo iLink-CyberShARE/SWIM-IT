@@ -15,7 +15,7 @@ This service was tested on CentOS 7
 + GAMS 24.7.4 with licence for Linux distribution
 
 ## Notes
-The org.gams.api maven package was manually created on the local .m2 repository using the following command:
+The org.gams.api maven package was manually created as a local Maven (.m2) repository using the following command:
 
 `mvn install:install-file -Dfile=/opt/gams/gams24.7_linux_x64_64_sfx/apifiles/Java/api/GAMSJavaAPI.jar -DgroupId=org.gams.api -DartifactId=gams-api -Dversion=1.0 -Dpackaging=jar`
 
@@ -26,8 +26,8 @@ For more information on local Maven repositories follow:
 <http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html>
 
 ## Contributors
-Lead Developer - Luis A. Garnica Chavira  
-Developer - Jose Caballero  
+Luis A. Garnica Chavira  
+Jose Caballero  
 
 ## Acknowledgements
 This material is based upon work supported by the National Science Foundation (NSF) under Grant No. 1835897 and The United States Department of Agriculture under Grant No. 2015-68007-23130. This work used resources from Cyber-ShARE Center of Excellence supported by NSF Grant HDR-1242122.   
@@ -35,7 +35,7 @@ This material is based upon work supported by the National Science Foundation (N
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 
 ## License
-GNU GENERAL PUBLIC LICENSE  3.0
+This software code is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](./LICENSE) and uses third party libraries that are distributed under their own terms (see [LICENSE-3RD-PARTY.md](./LICENSE-3RD-PARTY.md)).
 
 ## Copyright
-© 2021 University of Texas at El Paso (SWIM Project) 
+© 2023 University of Texas at El Paso (SWIM Project) 

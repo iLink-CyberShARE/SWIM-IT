@@ -43,7 +43,7 @@ For more information on local Maven repositories follow:
 Issues were presented to interface Java with Scilab on versions above 5.5.2
 
 ## Contributors
-Lead Developer - Luis A. Garnica Chavira
+Luis A. Garnica Chavira
 
 ## Acknowledgements
 This material is based upon work supported by the National Science Foundation (NSF) under Grant No. 1835897 and The United States Department of Agriculture under Grant No. 2015-68007-23130. This work used resources from Cyber-ShARE Center of Excellence supported by NSF Grant HDR-1242122. 
@@ -51,8 +51,8 @@ This material is based upon work supported by the National Science Foundation (N
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 
 ## License
-GNU GENERAL PUBLIC LICENSE  3.0
+This software code is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](./LICENSE) and uses third party libraries that are distributed under their own terms (see [LICENSE-3RD-PARTY.md](./LICENSE-3RD-PARTY.md)).
 
 ## Copyright
-© 2021 University of Texas at El Paso (SWIM Project) 
+© 2023 University of Texas at El Paso (SWIM Project) 
 
