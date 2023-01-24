@@ -26,7 +26,7 @@ This material is based upon work supported by the National Science Foundation (N
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 
 ## License
-This software code is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](./LICENSE) and uses third party libraries that are distributed under their own terms (see [LICENSE-3RD-PARTY.md](./LICENSE-3RD-PARTY.md)).
+This software code is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses third party libraries that are distributed under their own terms (see [LICENSE-3RD-PARTY.md](./LICENSE-3RD-PARTY.md)).
 
 ## Copyright
 © 2023 University of Texas at El Paso (SWIM Project) 
