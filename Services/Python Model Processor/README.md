@@ -1,11 +1,38 @@
 # Python Model Processor
 SWIM webservice wrapper for the python version of the MRG Water Balance Model version 2.0
 
-## Native Installation
+## Build and Run
+
+### Recommended Execution Environment
++ Python 3
++ pip dependency manager
++ All dependencies are managed via requirements.txt with pip
+
+### Option 1: Docker Compose File
+1. Download the docker-composer.yml file to a path in your machine.   
+2. Install Docker and Docker composer on your target machine.   
+3. Setup your docker account at: https://www.docker.com/get-started   
+4. Configure the docker-composer file with your own app settings.   
+5. Run docker compose: $docker-compose up   
+5a. Use -d option on the composer command to run on the background.   
+6. Swagger docs available at http://localhost:5000/swim-wb-py/docs/
+
+### Option 2: Build Docker Container
+1. Download this repository into a folder on your machine.
+2. Install Docker and Docker composer on your target machine.
+3. Setup your docker account at: https://www.docker.com/get-started
+4. Using a command line or terminal navigate to the base path of the project.
+5. Change configuration settings accordigly at the path /app/main/config
+6. Build the image: $docker build -t swim-wb-py:latest .
+7. Run the container: $docker run -p 5000:5000 dockeruser/swim-wb-py
+8. Swagger docs available at http://localhost:5000/swim-wb-py/docs/
+
+### Option 3: Native Installation
 > py -m venv env  // create new virtual python environment (windows)   
 > .\env\Scripts\activate // activate environment (windows)   
 > update pip // update the pip package (optional)   
 > py -m pip install -r requirements.txt // install required packages (windows)   
+> change configuration settings accordigly at the path /app/main/config
 > py manage.py run  // run webservice on localhost (windows)   
 > py manage.py runxlsinput // run model with json file input and export results to mongo   
 > py manage.py runjsoninput // run model with excel file input and export results to excel   

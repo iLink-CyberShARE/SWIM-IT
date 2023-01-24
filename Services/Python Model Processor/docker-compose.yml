@@ -2,7 +2,7 @@ version: '3.8'
 services:      
   swim-wb-py: 
     container_name: swim-wb-py
-    image: <docker_user>/swim-wb-py:latest
+    image: lagarnicachavira/swim-wb-py-public:latest
     restart: always
     environment:
       # app environment
