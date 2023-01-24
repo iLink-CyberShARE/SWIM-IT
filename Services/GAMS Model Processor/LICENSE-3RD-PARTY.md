@@ -7,3 +7,4 @@
 |[Morphia](https://github.com/MorphiaOrg/morphia)|1.0.0|[Apache License 2.0](https://github.com/MorphiaOrg/morphia/blob/master/LICENSE)|
 |[Apache Commons Collections](https://github.com/apache/commons-collections)|4.1|[Apache License 2.0](https://github.com/apache/commons-collections/blob/master/LICENSE.txt)|
 |[json-simple](https://code.google.com/archive/p/json-simple/)|1.1|[Apache License 2.0](https://github.com/fangyidong/json-simple/blob/master/LICENSE.txt)|
+|[GAMS Java API](https://www.gams.com/)|24.7|[EULA](https://www.gams.com/GAMS_EULA.pdf) License acquired by NMSU under USDA funding|

@@ -5,4 +5,4 @@ GAMS Development Corp.
 [https://www.gams.com/](https://www.gams.com/)
 
 ## License
-GAMS software distributed by GAMS Development Corp. under the following proprietary terms [https://www.gams.com/GAMS_EULA.pdf](https://www.gams.com/GAMS_EULA.pdf). 
+GAMS software distributed by GAMS Development Corp. under the following proprietary terms [https://www.gams.com/GAMS_EULA.pdf](https://www.gams.com/GAMS_EULA.pdf) license acquired by NMSU under USDA funding.

@@ -16,7 +16,7 @@ Data Provider - Zhuping Sheng (TAMU)
 This material is based upon work supported by The United States Department of Agriculture under Grant No. 2015-68007-23130.
 
 ## License
-Code for this model is licensed under the [GNU GENERAL PUBLIC LICENSE  3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses GAMS software distributed by GAMS Development Corp. under the following proprietary terms [https://www.gams.com/GAMS_EULA.pdf](https://www.gams.com/GAMS_EULA.pdf). 
+Code for this model is licensed under the [GNU GENERAL PUBLIC LICENSE  3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses GAMS software distributed by GAMS Development Corp. under the following proprietary terms [https://www.gams.com/GAMS_EULA.pdf](https://www.gams.com/GAMS_EULA.pdf) license acquired by NMSU under USDA funding.
 
 ## Copyright
 Copyright © 2015 - 2021 University of Texas at El Paso (USDA Water Sustainability Project) 
