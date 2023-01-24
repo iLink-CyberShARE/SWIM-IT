@@ -17,7 +17,7 @@ Data Provider - Zhuping Sheng (TAMU)
 This material is based upon work supported by The United States Department of Agriculture under Grant No. 2015-68007-23130.
 
 ## License
-GNU GENERAL PUBLIC LICENSE  3.0
+Code for this model is licensed under the [GNU GENERAL PUBLIC LICENSE  3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses Scilab software distributed by Dassault Systems under the following terms [https://github.com/scilab/scilab/blob/master/scilab/COPYING](https://github.com/scilab/scilab/blob/master/scilab/COPYING).
 
 ## Copyright
 © 2015 - 2021 University of Texas at El Paso (USDA Water Sustainability Project) 
