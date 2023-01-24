@@ -14,6 +14,6 @@
 |[numpy](https://github.com/numpy/numpy)|1.19.2|[BSD 3-Clause License](https://github.com/numpy/numpy/blob/main/LICENSE.txt)|
 |[pandas](https://github.com/pandas-dev/pandas)|1.1.4|[BSD 3-Clause License](https://github.com/pandas-dev/pandas/blob/main/LICENSE)|
 |[openpyxl](https://github.com/ericgazoni/openpyxl)|3.0.9|[MIT License](https://github.com/ericgazoni/openpyxl/blob/master/LICENCE.rst)|
-|[xlrd](https://github.com/python-excel/xlrd)|1.2.0|[Custom]|(https://github.com/python-excel/xlrd/blob/master/LICENSE)|
+|[xlrd](https://github.com/python-excel/xlrd)|1.2.0|[Custom](https://github.com/python-excel/xlrd/blob/master/LICENSE)|
 |[MongoEngine](https://github.com/MongoEngine/mongoengine)|0.23.1|[MIT License](https://github.com/MongoEngine/mongoengine)|
 |[uWSGI](https://github.com/unbit/uwsgi)|2.0.19.1|[GNU General Public License v2.0](https://github.com/unbit/uwsgi))|
