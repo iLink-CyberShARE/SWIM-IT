@@ -25,7 +25,7 @@ RUN python3 -m pip install mysql
 RUN python3 -m pip --no-cache-dir install -r requirements.txt
 
 # Expose port
-EXPOSE 5000
+EXPOSE 5001
 
 # Production WSGI Server
 CMD ["uwsgi", "app.ini"]
