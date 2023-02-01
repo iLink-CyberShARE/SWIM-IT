@@ -15,7 +15,7 @@ SWIM webservice wrapper for the python version of the MRG Water Balance Model ve
 4. Configure the docker-composer file with your own app settings.   
 5. Run docker compose: $docker-compose up   
 5a. Use -d option on the composer command to run on the background.   
-6. Swagger docs available at http://localhost:5000/swim-wb-py/docs/
+6. Swagger docs available at http://localhost:5001/swim-wb-py/docs/
 
 ### Option 2: Build Docker Container
 1. Download this repository into a folder on your machine.
@@ -25,7 +25,7 @@ SWIM webservice wrapper for the python version of the MRG Water Balance Model ve
 5. Change configuration settings accordigly at the path /app/main/config
 6. Build the image: $docker build -t swim-wb-py-public:latest .
 7. Run the container: $docker run -p 5000:5000 dockeruser/swim-wb-py
-8. Swagger docs available at http://localhost:5000/swim-wb-py/docs/
+8. Swagger docs available at http://localhost:5001/swim-wb-py/docs/
 
 ### Option 3: Native Installation
 > py -m venv env  // create new virtual python environment (windows)   
@@ -38,8 +38,8 @@ SWIM webservice wrapper for the python version of the MRG Water Balance Model ve
 > py manage.py runjsoninput // run model with excel file input and export results to excel   
 
 ## API Docs
-> Localhost: swagger docs will be available at http://localhost:5000/swim-wb-py/docs/   
-> Docker composer: swagger docs will be available at http://xxxxxx:5000/swim-wb-py/docs/   
+> Localhost: swagger docs will be available at http://localhost:5001/swim-wb-py/docs/   
+> Docker composer: swagger docs will be available at http://xxxxxx:5001/swim-wb-py/docs/   
 
 ## Documentation
 Water Balance 2.0: https://water.cybershare.utep.edu/resources/docs/en2/models/balancev2/
