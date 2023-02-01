@@ -1,5 +1,5 @@
 # Pull alpine linux image
-FROM centos:8.3.2011
+FROM centos:7
 
 # Update the environment and perform yum installations
 RUN yum update -y \
@@ -18,6 +18,8 @@ RUN python3 -m pip --no-cache-dir install --user --upgrade pip \
     && python3 -m pip --no-cache-dir install --user virtualenv \
     && python3 -m venv env \
     && source env/bin/activate
+
+RUN python3 -m pip install mysql
 
 # Install the dependencies
 RUN python3 -m pip --no-cache-dir install -r requirements.txt

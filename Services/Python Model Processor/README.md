@@ -23,7 +23,7 @@ SWIM webservice wrapper for the python version of the MRG Water Balance Model ve
 3. Setup your docker account at: https://www.docker.com/get-started
 4. Using a command line or terminal navigate to the base path of the project.
 5. Change configuration settings accordigly at the path /app/main/config
-6. Build the image: $docker build -t swim-wb-py:latest .
+6. Build the image: $docker build -t swim-wb-py-public:latest .
 7. Run the container: $docker run -p 5000:5000 dockeruser/swim-wb-py
 8. Swagger docs available at http://localhost:5000/swim-wb-py/docs/
 
