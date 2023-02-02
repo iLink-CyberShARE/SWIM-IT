@@ -1,4 +1,4 @@
-from flask_restplus import Api
+from flask_restx import Api
 from flask import Blueprint, url_for
 
 from .main.controller.service_controller import api as service_ns
@@ -28,7 +28,7 @@ authorizations = {
 
 api = CustomAPI(blueprint,
           title= "MRG Water Balance Run Service",
-          version='2.0',
+          version='2.1',
           description='Webservice encapsulation of the Middle Rio Grande Water Balance Model v2.0',
           doc='/docs/',
           security='Bearer Auth',

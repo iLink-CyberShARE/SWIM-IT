@@ -1,7 +1,7 @@
 from mongoengine import *
 
 class BaseScenario(Document):
-    _id = StringField(primary_key=True, unique=True)
+    _id = StringField(primary_key=True)
     name = StringField(required=True)
     description = StringField(required=True)
     isPublic = BooleanField()

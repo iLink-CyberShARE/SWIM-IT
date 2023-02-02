@@ -1,4 +1,4 @@
-from flask_restplus import Namespace, fields
+from flask_restx import Namespace, fields
 
 class ServiceDto:
     api = Namespace('/service/ping', description='Service availability check')
