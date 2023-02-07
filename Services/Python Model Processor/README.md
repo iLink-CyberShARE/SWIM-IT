@@ -47,6 +47,7 @@ Water Balance 2.0: https://water.cybershare.utep.edu/resources/docs/en2/models/b
 ## Contributors
 Luis A. Garnica Chavira  
 Robyn Holmes  
+Alex Mayer
 
 ## Acknowledgements
 This material is based upon work supported by the National Science Foundation (NSF) under Grant No. 1835897 and The United States Department of Agriculture under Grant No. 2015-68007-23130. This work used resources from Cyber-ShARE Center of Excellence supported by NSF Grant HDR-1242122.   
