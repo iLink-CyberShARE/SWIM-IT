@@ -15,6 +15,13 @@ Data Provider - Zhuping Sheng (TAMU)
 ## Acknowledgements
 This material is based upon work supported by The United States Department of Agriculture under Grant No. 2015-68007-23130.
 
+## How to cite
+If you create products such as publications using this model, it would be great if you add the following citation:     
+
+Ward, F. A., Mayer, A. S., Garnica, L. A., Townsend, N. T., & Gutzler, D. S. (2019).    
+The economics of aquifer protection plans under climate water stress: New insights from hydroeconomic modeling.    
+Journal of Hydrology, 576, 667–684. https://doi.org/10.1016/j.jhydrol.2019.06.081   
+
 ## License
 Code for this model is licensed under the [GNU GENERAL PUBLIC LICENSE  3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses GAMS software distributed by GAMS Development Corp. under the following proprietary terms [https://www.gams.com/GAMS_EULA.pdf](https://www.gams.com/GAMS_EULA.pdf) license acquired by NMSU under USDA funding.
 
