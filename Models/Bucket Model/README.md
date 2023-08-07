@@ -7,7 +7,9 @@ A simple coarse-scale basin model that simulates all major water sources, sinks,
 
 ## Contributors
 Author - Frank Ward (NMSU)   
-co-Author - Alex Mayer (UTEP)   
+co-author - Alex Mayer (UTEP)   
+co-author - Gregory Torell (NMSU)
+co- author - Luis Garnica (UTEP)
 Data Provider - David Gutzler (UNM)   
 Data Provider - Alfredo Granados (UACJ)   
 Data Provider - Zhuping Sheng (TAMU)   
@@ -16,11 +18,15 @@ Data Provider - Zhuping Sheng (TAMU)
 This material is based upon work supported by The United States Department of Agriculture under Grant No. 2015-68007-23130.
 
 ## How to cite
-If you create products such as publications using this model, it would be great if you add the following citation:     
+If you create products such as publications using this model, it would be great if you add the following citations:     
 
 Ward, F. A., Mayer, A. S., Garnica, L. A., Townsend, N. T., & Gutzler, D. S. (2019).    
 The economics of aquifer protection plans under climate water stress: New insights from hydroeconomic modeling.    
-Journal of Hydrology, 576, 667–684. https://doi.org/10.1016/j.jhydrol.2019.06.081   
+Journal of Hydrology, 576, 667–684. https://doi.org/10.1016/j.jhydrol.2019.06.081     
+
+Torell, G.L., Lee, K.D., Garnica, L.A., Mayer, A.S. and Ward, F.A., 2022.    
+Least-Cost Provision of Ecosystem Services from Water: When, Where, and How Much?.     
+Journal of Water Resources Planning and Management, 148(2), p.04021100.    
 
 ## License
 Code for this model is licensed under the [GNU GENERAL PUBLIC LICENSE  3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses GAMS software distributed by GAMS Development Corp. under the following proprietary terms [https://www.gams.com/GAMS_EULA.pdf](https://www.gams.com/GAMS_EULA.pdf) license acquired by NMSU under USDA funding.
