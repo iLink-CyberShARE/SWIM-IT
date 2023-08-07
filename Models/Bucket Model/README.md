@@ -8,8 +8,8 @@ A simple coarse-scale basin model that simulates all major water sources, sinks,
 ## Contributors
 Author - Frank Ward (NMSU)   
 co-author - Alex Mayer (UTEP)   
-co-author - Gregory Torell (NMSU)
-co- author - Luis Garnica (UTEP)
+co-author - Gregory Torell (NMSU)   
+co- author - Luis Garnica (UTEP)   
 Data Provider - David Gutzler (UNM)   
 Data Provider - Alfredo Granados (UACJ)   
 Data Provider - Zhuping Sheng (TAMU)   
